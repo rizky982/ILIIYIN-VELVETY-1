@@ -1,0 +1,169 @@
+// === Variabel Warna (opsional, kamu bisa simpan di _variables.scss) ===
+$primary-bg: #f1f4ed;
+$primary-color: #2e2e2e;
+$card-bg: white;
+$card-border: #e0e0e0;
+$tag-bg: #eaf1e7;
+$tag-hover: #d8e3d6;
+$tag-active: #d0dbcf;
+$rating-color: #3f7f4c;
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: $primary-bg;
+  color: $primary-color;
+}
+
+.ts-container {
+  display: flex;
+  padding: 3rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+}
+
+.ts-filters {
+  flex: 1;
+  min-width: 250px;
+
+  .ts-title {
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.ts-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  .ts-tag {
+    background-color: $tag-bg;
+    padding: 0.4rem 0.9rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $tag-hover;
+    }
+
+    &.active {
+      background-color: $tag-active;
+      font-weight: bold;
+    }
+  }
+}
+
+.ts-products-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ts-products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ts-card {
+  background-color: $card-bg;
+  border: 1px solid $card-border;
+
+  .ts-card-img {
+    background-color: $tag-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+
+    @media (max-width: 768px) {
+      height: 200px;
+    }
+
+    img {
+      max-height: 240px;
+      object-fit: contain;
+
+      @media (max-width: 768px) {
+        max-height: 180px;
+      }
+    }
+  }
+
+  .ts-card-body {
+    padding: 1rem;
+
+    h3 {
+      font-size: 1rem;
+      margin: 0 0 0.3rem 0;
+      font-weight: 500;
+    }
+
+    .ts-price {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .ts-stars {
+      color: $rating-color;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.ts-shop-btn {
+  margin-top: 1rem;
+  align-self: flex-start;
+
+  @media (max-width: 768px) {
+    align-self: center;
+  }
+
+  button {
+    background: none;
+    border: 1px solid $primary-color;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+
+    &::after {
+      content: '→';
+      margin-left: 0.5rem;
+    }
+  }
+}

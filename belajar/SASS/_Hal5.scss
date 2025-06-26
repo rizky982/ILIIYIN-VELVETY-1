@@ -1,0 +1,167 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-section {
+  flex: 1;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.headline {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #1e2d1f;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.description {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.custom-button {
+  border: 1px solid black;
+  padding: 0.5rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.testimonial-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-text {
+  flex: 2;
+  max-width: 600px;
+}
+
+.arrows {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1e2d1f;
+  font-size: 1.25rem;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.dots {
+  font-size: 1.5rem;
+  line-height: 0.5;
+}
+
+.benefit-button {
+  border: 1px solid #1e2d1f;
+  padding: 0.5rem 1.25rem;
+  background-color: transparent;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    background-color: #1e2d1f;
+    color: white;
+  }
+}
+
+.testimonial-section {
+  background-color: #f4f7f2;
+}
+
+.benefits-section {
+  background-color: #f4f7f2;
+}
+
+.drop-shadow-xl {
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.25));
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 40px 0;
+}
+
+.section-divider {
+  width: 100%;
+  margin: 60px auto 20px auto;
+  border-bottom: 1px dashed #c0c0c0;
+}
+
+.section-divider1 {
+  width: 85%;
+  margin: 0px auto 20px auto;
+  border-bottom: 1px dashed #c0c0c0;
+}

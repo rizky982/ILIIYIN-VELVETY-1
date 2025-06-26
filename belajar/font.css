@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Ivy Mode';
+    src: url('IvyMode-Regular.eot');
+    src: local('Ivy Mode Regular'), local('IvyMode-Regular'),
+        url('IvyMode-Regular.eot?#iefix') format('embedded-opentype'),
+        url('IvyMode-Regular.woff2') format('woff2'),
+        url('IvyMode-Regular.woff') format('woff'),
+        url('IvyMode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

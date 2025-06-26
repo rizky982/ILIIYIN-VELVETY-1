@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velvety</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="font.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/abc123def456.js" crossorigin="anonymous"></script>
+ <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+ <div class="mobile-hero">
+  <img src="velvety/Image.png" class="mobile-bg" alt="Background" />
+  <div class="overlay"></div>
+
+  <div class="mobile-content">
+    <div class="mobile-top">
+      <img src="./velvety/Logo.png" alt="VELVETY Logo" />
+      <div class="nav-links">
+        <a href="#">SHOP</a>
+        <a href="#">CART (0)</a>
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <h1 style="font-family: 'Ivy Mode'; font-weight: normal;">Let nature take<br />care of your<br />body and soul</h1>
+      <a href="#" class="shop-btn">Shop now →</a>
+    </div>
+
+    <div class="product-container">
+      <img src="velvety/Velvety2.png" alt="Product" class="product-img-mobile" />
+    </div>
+  </div>
+
+  <!-- HAMBURGER MENU (OVERLAY) -->
+  <div class="hamburger-menu" id="hamburgerMenu">
+    <div class="hamburger-header">
+      <button class="close-btn" onclick="closeMenu()">✕</button>
+    </div>
+    <ul class="menu-list">
+  <li><a href="#">PAGES</a></li>
+  <li><a href="#">SHOP</a></li>
+  <li><a href="#">ABOUT</a></li>
+</ul>
+
+<!-- Login di luar ul supaya posisinya bisa ke bawah -->
+<a href="#" class="login-btn">Login</a>
+
+  </div>
+</div>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const hamburgerMenu = document.getElementById("hamburgerMenu");
+
+  menuBtn.addEventListener("click", () => {
+    hamburgerMenu.classList.add("active");
+  });
+
+  function closeMenu() {
+    hamburgerMenu.classList.remove("active");
+  }
+</script>
+
+
+<!-- DESKTOP HERO -->
+<section class="hero">
+  <header class="topbar" id="navbar">
+    <div class="brand">
+      <h1>VELVETY</h1>
+      <p>Facial & skincare</p>
+    </div>
+    <!-- Tombol Hamburger (di luar nav.menu) -->
+    <div class="hamburger" onclick="toggleMobileMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+   <nav class="menu">
+  <div class="menu-cluster">
+    <a href="#">PAGES</a>
+    <a href="#">ABOUT</a>
+    <a href="#">LOGIN</a>
+  </div>
+</nav>
+
+<!-- SHOP & CART dipisah dari hamburger menu -->
+<div class="static-menu">
+  <a href="#">SHOP</a>
+  <a href="#">CART (0)</a>
+</div>
+
+    </nav>
+  </header>
+ <!-- SIDEBAR MENU (Fullscreen Mobile) -->
+<div class="mobile-sidebar" id="mobileSidebar">
+  <div class="close-btn" onclick="toggleMobileMenu()">X</div>
+  <nav style="font-family: 'Ivy Mode'; font-weight: normal;" class="mobile-nav">
+    <a href="#">PAGES</a>
+    <a href="#">SHOP</a>
+    <a href="#">ABOUT</a>
+    <div class="login-link">
+    <a href="#">LOGIN</a>
+  </div>
+  </nav>
+</div>
+  <div class="left-side">
+   <div class="logo">
+</div>
+
+    <img src="velvety/Velvety2.png" alt="Product" class="product-img">
+    <div class="scroll-nav">
+      <span class="arrow"><svg width="31" height="19" viewBox="0 0 31 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.289 0.974609V0.976562C18.2893 0.977504 18.2895 0.979017 18.2899 0.980469C18.291 0.983492 18.2931 0.988041 18.2948 0.993164C18.2983 1.00344 18.3031 1.01798 18.3095 1.03613C18.3225 1.07331 18.3422 1.12684 18.3671 1.19434C18.417 1.3294 18.4901 1.52259 18.5878 1.75879C18.7831 2.23073 19.0763 2.88086 19.4667 3.59668C20.2378 5.01022 21.4338 6.76125 23.0839 7.86133C23.7501 8.30549 24.4385 8.67575 25.1073 8.9873H-9.91821e-05V10.4873H25.1073C24.4385 10.7989 23.7502 11.1691 23.0839 11.6133C21.4338 12.7133 20.2378 14.4644 19.4667 15.8779C19.0762 16.5938 18.7831 17.2439 18.5878 17.7158C18.49 17.952 18.417 18.1452 18.3671 18.2803C18.3422 18.3478 18.3225 18.4013 18.3095 18.4385C18.3031 18.4566 18.2983 18.4711 18.2948 18.4814C18.2931 18.4866 18.291 18.4911 18.2899 18.4941C18.2894 18.4956 18.2893 18.4971 18.289 18.498V18.5L19.7108 18.9746L19.7118 18.9736C19.7122 18.9723 19.7127 18.9699 19.7138 18.9668C19.7161 18.96 19.7203 18.9492 19.7255 18.9346C19.7359 18.9049 19.7515 18.8591 19.7733 18.7998C19.8172 18.681 19.8849 18.5067 19.9745 18.29C20.1542 17.8558 20.4237 17.2556 20.7831 16.5967C21.512 15.2603 22.5662 13.7612 23.9159 12.8613C25.3332 11.9165 26.883 11.3184 28.0907 10.9561C28.6918 10.7757 29.2021 10.6555 29.5595 10.5811C29.7378 10.5439 29.8778 10.5182 29.9716 10.502C30.0181 10.4939 30.0533 10.488 30.0761 10.4844C30.0874 10.4826 30.0965 10.4812 30.1015 10.4805L30.1063 10.4795L30.0536 9.7373L30.1063 8.99512L30.1015 8.99414C30.0965 8.99339 30.0873 8.99201 30.0761 8.99023C30.0533 8.98665 30.0181 8.98071 29.9716 8.97266C29.8778 8.95643 29.7378 8.9307 29.5595 8.89355C29.2021 8.81909 28.6918 8.69887 28.0907 8.51855C26.883 8.15623 25.3332 7.55813 23.9159 6.61328C22.5662 5.71341 21.512 4.21426 20.7831 2.87793C20.4237 2.21907 20.1542 1.61874 19.9745 1.18457C19.8849 0.967945 19.8172 0.793554 19.7733 0.674805C19.7515 0.615565 19.7359 0.569683 19.7255 0.540039C19.7203 0.52538 19.7161 0.514531 19.7138 0.507812C19.7127 0.504734 19.7123 0.502273 19.7118 0.500977L19.7108 0.5L18.289 0.974609Z" fill="#E4ECE0"/>
+</svg>
+</span>
+      <div class="dots">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <span class="arrow"><svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.8174 1.07663V1.07858C11.8171 1.07952 11.8169 1.08104 11.8164 1.08249C11.8154 1.08551 11.8133 1.09006 11.8115 1.09518C11.808 1.10546 11.8032 1.12 11.7969 1.13815C11.7839 1.17533 11.7642 1.22886 11.7393 1.29636C11.6894 1.43142 11.6163 1.62461 11.5186 1.86081C11.3233 2.33275 11.0301 2.98288 10.6396 3.6987C9.86859 5.11224 8.6725 6.86327 7.02246 7.96335C6.35621 8.40751 5.6678 8.77777 4.99902 9.08932H30.1064V10.5893H4.99902C5.66783 10.9009 6.35618 11.2711 7.02246 11.7153C8.67254 12.8154 9.86857 14.5664 10.6396 15.9799C11.0301 16.6958 11.3232 17.3459 11.5186 17.8178C11.6163 18.0541 11.6894 18.2472 11.7393 18.3823C11.7642 18.4498 11.7838 18.5033 11.7969 18.5405C11.8032 18.5587 11.808 18.5732 11.8115 18.5835C11.8133 18.5886 11.8154 18.5931 11.8164 18.5962C11.8169 18.5976 11.8171 18.5991 11.8174 18.6001V18.602L10.3955 19.0766L10.3945 19.0757C10.3941 19.0743 10.3936 19.0719 10.3926 19.0688C10.3903 19.0621 10.386 19.0513 10.3809 19.0366C10.3705 19.0069 10.3549 18.9611 10.333 18.9018C10.2892 18.7831 10.2215 18.6087 10.1318 18.3921C9.95217 17.9579 9.68262 17.3576 9.32324 16.6987C8.59431 15.3623 7.54019 13.8632 6.19043 12.9633C4.77313 12.0185 3.22335 11.4204 2.01562 11.0581C1.41452 10.8778 0.904283 10.7575 0.546875 10.6831C0.368509 10.6459 0.228521 10.6202 0.134766 10.604C0.0882076 10.5959 0.0530233 10.59 0.0302734 10.5864C0.0189665 10.5846 0.00985524 10.5832 0.00488281 10.5825L0 10.5815L0.0527344 9.83932L0 9.09714L0.00488281 9.09616C0.00986378 9.09541 0.0189974 9.09403 0.0302734 9.09225C0.0530245 9.08867 0.0882368 9.08273 0.134766 9.07468C0.228521 9.05845 0.368538 9.03272 0.546875 8.99557C0.90428 8.92111 1.41456 8.80089 2.01562 8.62057C3.22334 8.25825 4.77316 7.66015 6.19043 6.7153C7.54015 5.81543 8.59434 4.31628 9.32324 2.97995C9.6826 2.32109 9.95218 1.72076 10.1318 1.28659C10.2215 1.06996 10.2892 0.895574 10.333 0.776825C10.3549 0.717586 10.3705 0.671703 10.3809 0.642059C10.386 0.6274 10.3903 0.616551 10.3926 0.609833C10.3936 0.606754 10.3941 0.604294 10.3945 0.602997L10.3955 0.60202L11.8174 1.07663Z" fill="#E4ECE0"/>
+</svg>
+</span>
+    </div>
+  </div>
+
+  <div class="right-side">
+     
+  
+
+    <div class="text-box">
+      <h1 style="font-family: 'Ivy Mode'; font-weight: normal;">Let nature take<br>care of your body<br>and soul</h1>
+      <a href="#" class="shop-btn">Shop now <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.2358 1.23715V1.23911C19.2362 1.24005 19.2363 1.24156 19.2368 1.24301C19.2378 1.24603 19.2399 1.25058 19.2417 1.25571C19.2452 1.26598 19.25 1.28052 19.2563 1.29868C19.2694 1.33585 19.289 1.38938 19.314 1.45688C19.3638 1.59194 19.4369 1.78513 19.5347 2.02133C19.73 2.49327 20.0231 3.1434 20.4136 3.85922C21.1846 5.27277 22.3807 7.02379 24.0308 8.12387C24.697 8.56804 25.3854 8.9383 26.0542 9.24985H0.946777V10.7498H26.0542C25.3854 11.0614 24.697 11.4316 24.0308 11.8758C22.3807 12.9759 21.1847 14.7269 20.4136 16.1405C20.0231 16.8563 19.73 17.5064 19.5347 17.9784C19.4369 18.2146 19.3638 18.4077 19.314 18.5428C19.289 18.6103 19.2694 18.6638 19.2563 18.701C19.25 18.7192 19.2452 18.7337 19.2417 18.744C19.2399 18.7491 19.2379 18.7536 19.2368 18.7567C19.2363 18.7581 19.2361 18.7596 19.2358 18.7606V18.7625L20.6577 19.2372L20.6587 19.2362C20.6591 19.2348 20.6596 19.2324 20.6606 19.2293C20.663 19.2226 20.6672 19.2118 20.6724 19.1971C20.6828 19.1674 20.6983 19.1216 20.7202 19.0623C20.7641 18.9436 20.8317 18.7692 20.9214 18.5526C21.1011 18.1184 21.3706 17.5181 21.73 16.8592C22.4589 15.5229 23.513 14.0237 24.8628 13.1239C26.2801 12.179 27.8299 11.5809 29.0376 11.2186C29.6387 11.0383 30.1489 10.9181 30.5063 10.8436C30.6847 10.8064 30.8247 10.7807 30.9185 10.7645C30.965 10.7564 31.0002 10.7505 31.0229 10.7469C31.0343 10.7451 31.0434 10.7438 31.0483 10.743L31.0532 10.742L31.0005 9.99985L31.0532 9.25766L31.0483 9.25668C31.0434 9.25594 31.0342 9.25455 31.0229 9.25278C31.0002 9.24919 30.965 9.24325 30.9185 9.2352C30.8247 9.21897 30.6847 9.19325 30.5063 9.1561C30.1489 9.08163 29.6387 8.96141 29.0376 8.7811C27.8299 8.41877 26.2801 7.82067 24.8628 6.87582C23.5131 5.97596 22.4589 4.4768 21.73 3.14047C21.3706 2.48161 21.101 1.88128 20.9214 1.44711C20.8318 1.23049 20.7641 1.0561 20.7202 0.937347C20.6983 0.878108 20.6827 0.832225 20.6724 0.802582C20.6672 0.787923 20.6629 0.777074 20.6606 0.770355C20.6596 0.767277 20.6591 0.764816 20.6587 0.763519L20.6577 0.762543L19.2358 1.23715Z" fill="#213721"/>
+</svg>
+</a>
+    </div>
+  </div>
+</section>
+
+  <section>
+ <div class="nature-section">
+  <div class="nature-left">
+    <h1 style="font-family: 'Ivy Mode'; font-weight: normal;">Inspired by traditional knowledge and nature</h1>
+    <img src="velvety/PNG file 1 (1).png" alt="nature" class="nature-image" />
+  </div>
+  <div class="nature-right">
+    <div class="nature-feature">
+      <img src="velvety/Organic.png" class="feature-icon" alt="icon" />
+      <div class="feature-text">
+        <h3>100% Organic</h3>
+        <p>We craft skincare using the most exquisite ingredients from the plant, earth and mineral realms.</p>
+      </div>
+    </div>
+    <div class="nature-feature">
+      <img src="velvety/skin 1.png" class="feature-icon" alt="icon" />
+      <div class="feature-text">
+        <h3>Fits your skin</h3>
+        <p>It’s all natural and processed based on traditional knowledge with modern technology.</p>
+      </div>
+    </div>
+    <div class="nature-feature">
+      <img src="velvety/serum 3.png" class="feature-icon" alt="icon" />
+      <div class="feature-text">
+        <h3>Easy to use</h3>
+        <p>Packed with a unique design as well as useful that can help you perform routine skincare.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section>
+  <div class="section-divider2"></div>
+  <section class="section">
+    <div class="section-subtitle">Our featured products</div>
+    <h2 class="section-title" style="font-family: 'Ivy Mode'; font-weight: normal;">Facial and skincare, natural and<br>certified organic</h2>
+  <div class="section-divider3"></div>
+  <div class="product-grid">
+    
+    <!-- CARD 1 -->
+    <div class="product-card">
+      <div class="image-box">
+        <img src="velvety/Product Image.png" alt="Chicori" />
+      </div>
+      <div class="product-info">
+        <div class="product-row">
+          <div class="product-name">CHICORI</div>
+           <div class="product-price">$20</div>
+          <div class="stars">
+            <svg width="157" height="32" viewBox="0 0 157 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99999 7.25L7.15624 13.0125L0.799988 13.9312L5.39999 18.4188L4.31249 24.75L9.99999 21.7625L15.6875 24.75L14.6 18.4188L19.2 13.9375L12.8437 13.0125L9.99999 7.25Z" fill="#3C5E39"/>
+<path d="M34 7.25L31.1562 13.0125L24.8 13.9312L29.4 18.4188L28.3125 24.75L34 21.7625L39.6875 24.75L38.6 18.4188L43.2 13.9375L36.8437 13.0125L34 7.25Z" fill="#3C5E39"/>
+<path d="M58 7.25L55.1562 13.0125L48.8 13.9312L53.4 18.4188L52.3125 24.75L58 21.7625L63.6875 24.75L62.6 18.4188L67.2 13.9375L60.8437 13.0125L58 7.25Z" fill="#3C5E39"/>
+<path d="M82 7.25L79.1562 13.0125L72.8 13.9312L77.4 18.4188L76.3125 24.75L82 21.7625L87.6875 24.75L86.6 18.4188L91.2 13.9375L84.8437 13.0125L82 7.25Z" fill="#3C5E39"/>
+<path d="M106 7.25L103.156 13.0125L96.8 13.9312L101.4 18.4188L100.312 24.75L106 21.7625L111.687 24.75L110.6 18.4188L115.2 13.9375L108.844 13.0125L106 7.25Z" fill="#3C5E39"/>
+<path d="M134.49 14.688C137.68 14.688 139.352 16.844 139.352 19.682C139.352 22.938 136.888 24.808 134.116 24.808C131.432 24.808 129.518 23.422 129.21 20.518L129.188 20.298H130.552L130.596 20.518C130.904 22.41 132.048 23.708 134.116 23.708C136.162 23.708 137.834 22.344 137.834 19.77C137.834 17.328 136.448 15.788 134.292 15.788C132.73 15.788 131.564 16.448 130.772 18.098H129.474L130.662 9.342H138.934V10.486H131.762L130.882 16.514L131.784 15.48C132.576 14.952 133.434 14.688 134.49 14.688ZM142.224 22.718C142.818 22.718 143.258 23.158 143.258 23.752C143.258 24.368 142.818 24.808 142.224 24.808C141.608 24.808 141.168 24.368 141.168 23.752C141.168 23.158 141.608 22.718 142.224 22.718ZM150.789 9.012C154.749 9.012 156.091 12.422 156.091 16.91C156.091 21.398 154.749 24.808 150.789 24.808C146.807 24.808 145.465 21.398 145.465 16.91C145.465 12.4 146.807 9.012 150.789 9.012ZM150.789 23.708C153.561 23.708 154.573 20.958 154.573 16.91C154.573 12.862 153.561 10.112 150.789 10.112C148.017 10.112 146.983 12.84 146.983 16.91C146.983 20.958 148.017 23.708 150.789 23.708Z" fill="#3C5E39"/>
+</svg>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="product-card">
+      <div class="image-box">
+        <img src="velvety/Product Image (1).png" alt="Notorious" />
+      </div>
+      <div class="product-info">
+        <div class="product-row">
+          <div class="product-name">NOTORIOUS</div>
+           <div class="product-price">$23</div>
+          <div class="stars">
+           <svg width="157" height="32" viewBox="0 0 157 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99999 7.25L7.15624 13.0125L0.799988 13.9312L5.39999 18.4188L4.31249 24.75L9.99999 21.7625L15.6875 24.75L14.6 18.4188L19.2 13.9375L12.8437 13.0125L9.99999 7.25Z" fill="#3C5E39"/>
+<path d="M34 7.25L31.1562 13.0125L24.8 13.9312L29.4 18.4188L28.3125 24.75L34 21.7625L39.6875 24.75L38.6 18.4188L43.2 13.9375L36.8437 13.0125L34 7.25Z" fill="#3C5E39"/>
+<path d="M58 7.25L55.1562 13.0125L48.8 13.9312L53.4 18.4188L52.3125 24.75L58 21.7625L63.6875 24.75L62.6 18.4188L67.2 13.9375L60.8437 13.0125L58 7.25Z" fill="#3C5E39"/>
+<path d="M82 7.25L79.1562 13.0125L72.8 13.9312L77.4 18.4188L76.3125 24.75L82 21.7625L87.6875 24.75L86.6 18.4188L91.2 13.9375L84.8437 13.0125L82 7.25Z" fill="#3C5E39"/>
+<path d="M106 7.25L103.156 13.0125L96.8 13.9312L101.4 18.4188L100.312 24.75L106 21.7625L111.687 24.75L110.6 18.4188L115.2 13.9375L108.844 13.0125L106 7.25Z" fill="#3C5E39"/>
+<path d="M134.49 14.688C137.68 14.688 139.352 16.844 139.352 19.682C139.352 22.938 136.888 24.808 134.116 24.808C131.432 24.808 129.518 23.422 129.21 20.518L129.188 20.298H130.552L130.596 20.518C130.904 22.41 132.048 23.708 134.116 23.708C136.162 23.708 137.834 22.344 137.834 19.77C137.834 17.328 136.448 15.788 134.292 15.788C132.73 15.788 131.564 16.448 130.772 18.098H129.474L130.662 9.342H138.934V10.486H131.762L130.882 16.514L131.784 15.48C132.576 14.952 133.434 14.688 134.49 14.688ZM142.224 22.718C142.818 22.718 143.258 23.158 143.258 23.752C143.258 24.368 142.818 24.808 142.224 24.808C141.608 24.808 141.168 24.368 141.168 23.752C141.168 23.158 141.608 22.718 142.224 22.718ZM150.789 9.012C154.749 9.012 156.091 12.422 156.091 16.91C156.091 21.398 154.749 24.808 150.789 24.808C146.807 24.808 145.465 21.398 145.465 16.91C145.465 12.4 146.807 9.012 150.789 9.012ZM150.789 23.708C153.561 23.708 154.573 20.958 154.573 16.91C154.573 12.862 153.561 10.112 150.789 10.112C148.017 10.112 146.983 12.84 146.983 16.91C146.983 20.958 148.017 23.708 150.789 23.708Z" fill="#3C5E39"/>
+</svg>
+          
+          </div>
+        </div>
+       
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="product-card">
+      <div class="image-box">
+        <img src="velvety/Product Image (2).png" alt="Holocena" />
+      </div>
+      <div class="product-info">
+        <div class="product-row">
+          <div class="product-name">HOLOCENA</div>
+          <div class="product-price">$20</div>
+          <div class="stars">
+            <svg width="157" height="32" viewBox="0 0 157 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99999 7.25L7.15624 13.0125L0.799988 13.9312L5.39999 18.4188L4.31249 24.75L9.99999 21.7625L15.6875 24.75L14.6 18.4188L19.2 13.9375L12.8437 13.0125L9.99999 7.25Z" fill="#3C5E39"/>
+<path d="M34 7.25L31.1562 13.0125L24.8 13.9312L29.4 18.4188L28.3125 24.75L34 21.7625L39.6875 24.75L38.6 18.4188L43.2 13.9375L36.8437 13.0125L34 7.25Z" fill="#3C5E39"/>
+<path d="M58 7.25L55.1562 13.0125L48.8 13.9312L53.4 18.4188L52.3125 24.75L58 21.7625L63.6875 24.75L62.6 18.4188L67.2 13.9375L60.8437 13.0125L58 7.25Z" fill="#3C5E39"/>
+<path d="M82 7.25L79.1562 13.0125L72.8 13.9312L77.4 18.4188L76.3125 24.75L82 21.7625L87.6875 24.75L86.6 18.4188L91.2 13.9375L84.8437 13.0125L82 7.25Z" fill="#3C5E39"/>
+<path d="M106 7.25L103.156 13.0125L96.8 13.9312L101.4 18.4188L100.312 24.75L106 21.7625L111.687 24.75L110.6 18.4188L115.2 13.9375L108.844 13.0125L106 7.25Z" fill="#3C5E39"/>
+<path d="M134.49 14.688C137.68 14.688 139.352 16.844 139.352 19.682C139.352 22.938 136.888 24.808 134.116 24.808C131.432 24.808 129.518 23.422 129.21 20.518L129.188 20.298H130.552L130.596 20.518C130.904 22.41 132.048 23.708 134.116 23.708C136.162 23.708 137.834 22.344 137.834 19.77C137.834 17.328 136.448 15.788 134.292 15.788C132.73 15.788 131.564 16.448 130.772 18.098H129.474L130.662 9.342H138.934V10.486H131.762L130.882 16.514L131.784 15.48C132.576 14.952 133.434 14.688 134.49 14.688ZM142.224 22.718C142.818 22.718 143.258 23.158 143.258 23.752C143.258 24.368 142.818 24.808 142.224 24.808C141.608 24.808 141.168 24.368 141.168 23.752C141.168 23.158 141.608 22.718 142.224 22.718ZM150.789 9.012C154.749 9.012 156.091 12.422 156.091 16.91C156.091 21.398 154.749 24.808 150.789 24.808C146.807 24.808 145.465 21.398 145.465 16.91C145.465 12.4 146.807 9.012 150.789 9.012ZM150.789 23.708C153.561 23.708 154.573 20.958 154.573 16.91C154.573 12.862 153.561 10.112 150.789 10.112C148.017 10.112 146.983 12.84 146.983 16.91C146.983 20.958 148.017 23.708 150.789 23.708Z" fill="#3C5E39"/>
+</svg>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+ <div class="section-divider3"></div>
+</section>
+
+  <section>
+      <div class="main-container">
+    <div class="about-section">
+      <div class="about-left">
+        <h3>About us</h3>
+        <h1>Velvety facial and<br>skincare company</h1>
+      </div>
+      <div class="about-right" style="font-family: 'Ivy Mode'; font-weight: normal;">
+        <p>Velvety is an indigenous company that specializes in the manufacture and development of facial and skincare products using the medicinal properties of the traditional First Nations pharmacopoeia, with a concern for sustainable development.</p>
+        <br>
+        <p>The products offered, whose benefits have been scientifically confirmed, are 100% natural and allow you to take care of your body and mind: calming teas, energizing infusions, anti-inflammatory essential oils, anti-age soaps and creams, etc.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-divider"></div>
+  </section>
+
+
+  <!-- AS SEEN IN -->
+<section class="seen-section">
+  <div class="seen-container">
+    <p class="seen-label">As seen in</p>
+    <div class="seen-logo-list">
+      <img src="velvety/Company01.png" alt="Vogue Logo" class="seen-logo">
+      <img src="velvety/Company02.png" alt="Forbes Logo" class="seen-logo">
+      <img src="velvety/Company03.png" alt="Thought Catalog Logo" class="seen-logo">
+      <img src="velvety/Company04.png" alt="Women's Health Logo" class="seen-logo">
+      <img src="velvety/Company05.png" alt="WWD Logo" class="seen-logo">
+    </div>
+  </div>
+</section>
+
+ 
+  <section>
+    <div class="cta-bar">
+    <div class="cta-text" style="font-family: 'Ivy Mode'; font-weight: normal;">Let's see the processing of our products</div>
+    <div class="cta-arrow">
+      <img src="velvety/Arrow-left.png">
+        <path d="M10 30 H50 C55 30, 55 15, 70 10 M50 30 C55 30, 55 45, 70 50" stroke="#f2f5e9" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+  </section>
+
+ <section>
+  <div class="ts-container">
+    <!-- Sidebar Filter -->
+    <div class="ts-filters">
+      <div class="ts-title">All Products</div>
+      <h1 style="font-family: 'Ivy Mode'; font-weight: normal;">Mild skincare & facial routine</h1>
+      <div class="ts-tags-wrapper">
+        <div class="ts-tags" id="tags">
+          <div class="ts-tag active">All needs</div>
+          <div class="ts-tag">Protect</div>
+          <div class="ts-tag">Regenerates</div>
+          <div class="ts-tag">Revitalizes</div>
+          <div class="ts-tag">Feeds</div>
+          <div class="ts-tag">Regulates</div>
+          <div class="ts-tag">Purifies</div>
+          <div class="ts-tag">Makeup Removal</div>
+          <div class="ts-tag">Exfoliate</div>
+          <div class="ts-tag">Antioxidant</div>
+          <div class="ts-tag">Soothes</div>
+          <div class="ts-tag">Smoothes skin texture</div>
+          <div class="ts-tag">Tones</div>
+          <div class="ts-tag">Anti-waste</div>
+          <div class="ts-tag">Hydrate</div>
+          <div class="ts-tag">Strengthens</div>
+          <div class="ts-tag">Regenerates after UV exposure</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="ts-products-section">
+      <div class="ts-products">
+        <!-- CLASSWING -->
+        <div class="ts-card">
+          <div class="ts-card-img">
+            <img src="velvety/Item.png" alt="Classwing" />
+          </div>
+          <div class="ts-card-body">
+            <h3>CLASSWING</h3>
+            <div class="ts-price">$20</div>
+            <div class="ts-stars"><svg width="157" height="32" viewBox="0 0 157 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 7.40967L7.1563 13.1722L0.800049 14.0909L5.40005 18.5784L4.31255 24.9097L10 21.9222L15.6875 24.9097L14.6 18.5784L19.2 14.0972L12.8438 13.1722L10 7.40967Z" fill="#3C5E39"/>
+<path d="M34 7.40967L31.1563 13.1722L24.8 14.0909L29.4 18.5784L28.3125 24.9097L34 21.9222L39.6875 24.9097L38.6 18.5784L43.2 14.0972L36.8438 13.1722L34 7.40967Z" fill="#3C5E39"/>
+<path d="M58 7.40967L55.1563 13.1722L48.8 14.0909L53.4 18.5784L52.3125 24.9097L58 21.9222L63.6875 24.9097L62.6 18.5784L67.2 14.0972L60.8438 13.1722L58 7.40967Z" fill="#3C5E39"/>
+<path d="M82 7.40967L79.1563 13.1722L72.8 14.0909L77.4 18.5784L76.3125 24.9097L82 21.9222L87.6875 24.9097L86.6 18.5784L91.2 14.0972L84.8438 13.1722L82 7.40967Z" fill="#3C5E39"/>
+<path d="M106 7.40967L103.156 13.1722L96.8 14.0909L101.4 18.5784L100.313 24.9097L106 21.9222L111.688 24.9097L110.6 18.5784L115.2 14.0972L108.844 13.1722L106 7.40967Z" fill="#3C5E39"/>
+<path d="M134.49 14.8477C137.68 14.8477 139.352 17.0037 139.352 19.8417C139.352 23.0977 136.888 24.9677 134.116 24.9677C131.432 24.9677 129.518 23.5817 129.21 20.6777L129.188 20.4577H130.552L130.596 20.6777C130.904 22.5697 132.048 23.8677 134.116 23.8677C136.162 23.8677 137.834 22.5037 137.834 19.9297C137.834 17.4877 136.448 15.9477 134.292 15.9477C132.73 15.9477 131.564 16.6077 130.772 18.2577H129.474L130.662 9.50167H138.934V10.6457H131.762L130.882 16.6737L131.784 15.6397C132.576 15.1117 133.434 14.8477 134.49 14.8477ZM142.224 22.8777C142.818 22.8777 143.258 23.3177 143.258 23.9117C143.258 24.5277 142.818 24.9677 142.224 24.9677C141.608 24.9677 141.168 24.5277 141.168 23.9117C141.168 23.3177 141.608 22.8777 142.224 22.8777ZM150.789 9.17167C154.749 9.17167 156.091 12.5817 156.091 17.0697C156.091 21.5577 154.749 24.9677 150.789 24.9677C146.807 24.9677 145.465 21.5577 145.465 17.0697C145.465 12.5597 146.807 9.17167 150.789 9.17167ZM150.789 23.8677C153.561 23.8677 154.573 21.1177 154.573 17.0697C154.573 13.0217 153.561 10.2717 150.789 10.2717C148.017 10.2717 146.983 12.9997 146.983 17.0697C146.983 21.1177 148.017 23.8677 150.789 23.8677Z" fill="#3C5E39"/>
+</svg>
+</div>
+          </div>
+        </div>
+
+        <!-- HOLOCANE -->
+        <div class="ts-card">
+          <div class="ts-card-img">
+            <img src="velvety/Item (1).png" alt="Holocane" />
+          </div>
+          <div class="ts-card-body">
+            <h3>HOLOCANE</h3>
+            <div class="ts-price">$23</div>
+            <div class="ts-stars"><svg width="157" height="32" viewBox="0 0 157 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 7.40967L7.1563 13.1722L0.800049 14.0909L5.40005 18.5784L4.31255 24.9097L10 21.9222L15.6875 24.9097L14.6 18.5784L19.2 14.0972L12.8438 13.1722L10 7.40967Z" fill="#3C5E39"/>
+<path d="M34 7.40967L31.1563 13.1722L24.8 14.0909L29.4 18.5784L28.3125 24.9097L34 21.9222L39.6875 24.9097L38.6 18.5784L43.2 14.0972L36.8438 13.1722L34 7.40967Z" fill="#3C5E39"/>
+<path d="M58 7.40967L55.1563 13.1722L48.8 14.0909L53.4 18.5784L52.3125 24.9097L58 21.9222L63.6875 24.9097L62.6 18.5784L67.2 14.0972L60.8438 13.1722L58 7.40967Z" fill="#3C5E39"/>
+<path d="M82 7.40967L79.1563 13.1722L72.8 14.0909L77.4 18.5784L76.3125 24.9097L82 21.9222L87.6875 24.9097L86.6 18.5784L91.2 14.0972L84.8438 13.1722L82 7.40967Z" fill="#3C5E39"/>
+<path d="M106 7.40967L103.156 13.1722L96.8 14.0909L101.4 18.5784L100.313 24.9097L106 21.9222L111.688 24.9097L110.6 18.5784L115.2 14.0972L108.844 13.1722L106 7.40967Z" fill="#3C5E39"/>
+<path d="M134.49 14.8477C137.68 14.8477 139.352 17.0037 139.352 19.8417C139.352 23.0977 136.888 24.9677 134.116 24.9677C131.432 24.9677 129.518 23.5817 129.21 20.6777L129.188 20.4577H130.552L130.596 20.6777C130.904 22.5697 132.048 23.8677 134.116 23.8677C136.162 23.8677 137.834 22.5037 137.834 19.9297C137.834 17.4877 136.448 15.9477 134.292 15.9477C132.73 15.9477 131.564 16.6077 130.772 18.2577H129.474L130.662 9.50167H138.934V10.6457H131.762L130.882 16.6737L131.784 15.6397C132.576 15.1117 133.434 14.8477 134.49 14.8477ZM142.224 22.8777C142.818 22.8777 143.258 23.3177 143.258 23.9117C143.258 24.5277 142.818 24.9677 142.224 24.9677C141.608 24.9677 141.168 24.5277 141.168 23.9117C141.168 23.3177 141.608 22.8777 142.224 22.8777ZM150.789 9.17167C154.749 9.17167 156.091 12.5817 156.091 17.0697C156.091 21.5577 154.749 24.9677 150.789 24.9677C146.807 24.9677 145.465 21.5577 145.465 17.0697C145.465 12.5597 146.807 9.17167 150.789 9.17167ZM150.789 23.8677C153.561 23.8677 154.573 21.1177 154.573 17.0697C154.573 13.0217 153.561 10.2717 150.789 10.2717C148.017 10.2717 146.983 12.9997 146.983 17.0697C146.983 21.1177 148.017 23.8677 150.789 23.8677Z" fill="#3C5E39"/>
+</svg>
+</div>
+          </div>
+        </div>
+
+        <!-- INAMORATA -->
+        <div class="ts-card">
+          <div class="ts-card-img">
+            <img src="velvety/Item (2).png" alt="Inamorata" />
+          </div>
+          <div class="ts-card-body">
+            <h3>INAMORATA</h3>
+            <div class="ts-price">$12</div>
+            <div class="ts-stars"><svg width="157" height="32" viewBox="0 0 157 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 7.40967L7.1563 13.1722L0.800049 14.0909L5.40005 18.5784L4.31255 24.9097L10 21.9222L15.6875 24.9097L14.6 18.5784L19.2 14.0972L12.8438 13.1722L10 7.40967Z" fill="#3C5E39"/>
+<path d="M34 7.40967L31.1563 13.1722L24.8 14.0909L29.4 18.5784L28.3125 24.9097L34 21.9222L39.6875 24.9097L38.6 18.5784L43.2 14.0972L36.8438 13.1722L34 7.40967Z" fill="#3C5E39"/>
+<path d="M58 7.40967L55.1563 13.1722L48.8 14.0909L53.4 18.5784L52.3125 24.9097L58 21.9222L63.6875 24.9097L62.6 18.5784L67.2 14.0972L60.8438 13.1722L58 7.40967Z" fill="#3C5E39"/>
+<path d="M82 7.40967L79.1563 13.1722L72.8 14.0909L77.4 18.5784L76.3125 24.9097L82 21.9222L87.6875 24.9097L86.6 18.5784L91.2 14.0972L84.8438 13.1722L82 7.40967Z" fill="#3C5E39"/>
+<path d="M106 10.2347L107.725 13.7222L108.013 14.3472L108.638 14.4409L112.488 14.9972L109.75 17.6847L109.281 18.1409L109.394 18.7659L110.05 22.5972L106.606 20.7909L106 20.5347L105.419 20.8409L101.975 22.6222L105.419 21.2066L105 19.1597L102.25 17.6847L99.4875 14.9659L101.975 18.1659L105.713 21.4659L106 20.8409V10.2347ZM106 7.40967L103.156 13.1722L96.8 14.0909L101.4 18.5784L100.313 24.9097L106 21.9222L111.688 24.9097L110.6 18.5784L115.2 14.0972L108.844 13.1722L106 7.40967Z" fill="#3C5E39"/>
+<path d="M139.704 20.6117H137.68V24.6597H136.316V20.6117H128.638V19.8857L136.36 9.47967H137.68V19.4897H139.704V20.6117ZM136.316 19.4897V11.3057C135.898 11.9437 135.414 12.6917 134.798 13.5497L130.376 19.4897H136.316ZM142.224 22.8777C142.818 22.8777 143.258 23.3177 143.258 23.9117C143.258 24.5277 142.818 24.9677 142.224 24.9677C141.608 24.9677 141.168 24.5277 141.168 23.9117C141.168 23.3177 141.608 22.8777 142.224 22.8777ZM151.097 14.8477C154.287 14.8477 155.959 17.0037 155.959 19.8417C155.959 23.0977 153.495 24.9677 150.723 24.9677C148.039 24.9677 146.125 23.5817 145.817 20.6777L145.795 20.4577H147.159L147.203 20.6777C147.511 22.5697 148.655 23.8677 150.723 23.8677C152.769 23.8677 154.441 22.5037 154.441 19.9297C154.441 17.4877 153.055 15.9477 150.899 15.9477C149.337 15.9477 148.171 16.6077 147.379 18.2577H146.081L147.269 9.50167H155.541V10.6457H148.369L147.489 16.6737L148.391 15.6397C149.183 15.1117 150.041 14.8477 151.097 14.8477Z" fill="#3C5E39"/>
+</svg>
+</div>
+          </div>
+        </div>
+
+        <!-- LIGHTCOOL -->
+        <div class="ts-card">
+          <div class="ts-card-img">
+            <img src="velvety/Item (3).png" alt="Lightcool" />
+          </div>
+          <div class="ts-card-body">
+            <h3>LIGHTCOOL</h3>
+            <div class="ts-price">$22.5</div>
+            <div class="ts-stars"><svg width="157" height="32" viewBox="0 0 157 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 7.40967L7.1563 13.1722L0.800049 14.0909L5.40005 18.5784L4.31255 24.9097L10 21.9222L15.6875 24.9097L14.6 18.5784L19.2 14.0972L12.8438 13.1722L10 7.40967Z" fill="#3C5E39"/>
+<path d="M34 7.40967L31.1563 13.1722L24.8 14.0909L29.4 18.5784L28.3125 24.9097L34 21.9222L39.6875 24.9097L38.6 18.5784L43.2 14.0972L36.8438 13.1722L34 7.40967Z" fill="#3C5E39"/>
+<path d="M58 7.40967L55.1563 13.1722L48.8 14.0909L53.4 18.5784L52.3125 24.9097L58 21.9222L63.6875 24.9097L62.6 18.5784L67.2 14.0972L60.8438 13.1722L58 7.40967Z" fill="#3C5E39"/>
+<path d="M82 7.40967L79.1563 13.1722L72.8 14.0909L77.4 18.5784L76.3125 24.9097L82 21.9222L87.6875 24.9097L86.6 18.5784L91.2 14.0972L84.8438 13.1722L82 7.40967Z" fill="#3C5E39"/>
+<path d="M106 7.40967L103.156 13.1722L96.8 14.0909L101.4 18.5784L100.313 24.9097L106 21.9222L111.688 24.9097L110.6 18.5784L115.2 14.0972L108.844 13.1722L106 7.40967Z" fill="#3C5E39"/>
+<path d="M134.49 14.8477C137.68 14.8477 139.352 17.0037 139.352 19.8417C139.352 23.0977 136.888 24.9677 134.116 24.9677C131.432 24.9677 129.518 23.5817 129.21 20.6777L129.188 20.4577H130.552L130.596 20.6777C130.904 22.5697 132.048 23.8677 134.116 23.8677C136.162 23.8677 137.834 22.5037 137.834 19.9297C137.834 17.4877 136.448 15.9477 134.292 15.9477C132.73 15.9477 131.564 16.6077 130.772 18.2577H129.474L130.662 9.50167H138.934V10.6457H131.762L130.882 16.6737L131.784 15.6397C132.576 15.1117 133.434 14.8477 134.49 14.8477ZM142.224 22.8777C142.818 22.8777 143.258 23.3177 143.258 23.9117C143.258 24.5277 142.818 24.9677 142.224 24.9677C141.608 24.9677 141.168 24.5277 141.168 23.9117C141.168 23.3177 141.608 22.8777 142.224 22.8777ZM150.789 9.17167C154.749 9.17167 156.091 12.5817 156.091 17.0697C156.091 21.5577 154.749 24.9677 150.789 24.9677C146.807 24.9677 145.465 21.5577 145.465 17.0697C145.465 12.5597 146.807 9.17167 150.789 9.17167ZM150.789 23.8677C153.561 23.8677 154.573 21.1177 154.573 17.0697C154.573 13.0217 153.561 10.2717 150.789 10.2717C148.017 10.2717 146.983 12.9997 146.983 17.0697C146.983 21.1177 148.017 23.8677 150.789 23.8677Z" fill="#3C5E39"/>
+</svg>
+</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shop Now Button -->
+     <div class="ts-shop-btn">
+  <button class="flex items-center gap-2 text-[#213721] border border-[#213721] px-4 py-2">
+    Shop now
+  <svg width="31" height="19" viewBox="0 0 31 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.2889 0.737305V0.739258C18.2893 0.740199 18.2894 0.741712 18.2899 0.743164C18.2909 0.746187 18.293 0.750737 18.2948 0.755859C18.2983 0.766135 18.3031 0.780677 18.3094 0.798828C18.3225 0.836003 18.3421 0.889531 18.3671 0.957031C18.4169 1.09209 18.49 1.28528 18.5878 1.52148C18.7831 1.99342 19.0762 2.64355 19.4667 3.35938C20.2377 4.77292 21.4338 6.52395 23.0839 7.62402C23.7501 8.06819 24.4385 8.43845 25.1073 8.75H-0.00012207V10.25H25.1073C24.4385 10.5616 23.7501 10.9318 23.0839 11.376C21.4338 12.476 20.2378 14.2271 19.4667 15.6406C19.0762 16.3565 18.7831 17.0065 18.5878 17.4785C18.49 17.7147 18.4169 17.9079 18.3671 18.043C18.3421 18.1105 18.3225 18.164 18.3094 18.2012C18.3031 18.2193 18.2983 18.2338 18.2948 18.2441C18.293 18.2493 18.291 18.2538 18.2899 18.2568C18.2894 18.2583 18.2892 18.2598 18.2889 18.2607V18.2627L19.7108 18.7373L19.7118 18.7363C19.7122 18.735 19.7127 18.7326 19.7137 18.7295C19.7161 18.7227 19.7203 18.7119 19.7255 18.6973C19.7359 18.6676 19.7514 18.6218 19.7733 18.5625C19.8172 18.4437 19.8848 18.2694 19.9745 18.0527C20.1542 17.6185 20.4237 17.0183 20.7831 16.3594C21.512 15.023 22.5661 13.5239 23.9159 12.624C25.3332 11.6792 26.883 11.0811 28.0907 10.7188C28.6918 10.5384 29.202 10.4182 29.5594 10.3438C29.7378 10.3066 29.8778 10.2809 29.9716 10.2646C30.0181 10.2566 30.0533 10.2507 30.076 10.2471C30.0874 10.2453 30.0965 10.2439 30.1014 10.2432L30.1063 10.2422L30.0536 9.5L30.1063 8.75781L30.1014 8.75684C30.0965 8.75609 30.0873 8.7547 30.076 8.75293C30.0533 8.74934 30.0181 8.7434 29.9716 8.73535C29.8778 8.71912 29.7378 8.6934 29.5594 8.65625C29.202 8.58179 28.6918 8.46156 28.0907 8.28125C26.883 7.91893 25.3332 7.32082 23.9159 6.37598C22.5662 5.47611 21.512 3.97695 20.7831 2.64062C20.4237 1.98176 20.1541 1.38144 19.9745 0.947266C19.8849 0.73064 19.8172 0.556249 19.7733 0.4375C19.7514 0.378261 19.7359 0.332378 19.7255 0.302734C19.7203 0.288075 19.716 0.277226 19.7137 0.270508C19.7127 0.267429 19.7122 0.264969 19.7118 0.263672L19.7108 0.262695L18.2889 0.737305Z" fill="#213721"/>
+</svg>
+
+  </button>
+</div>
+
+  <script>
+  // Ambil semua elemen tag
+  const tags = document.querySelectorAll('.ts-tag');
+
+  tags.forEach(tag => {
+    tag.addEventListener('click', () => {
+      // Hapus class 'active' dari semua tag
+      tags.forEach(t => t.classList.remove('active'));
+      
+      // Tambahkan class 'active' ke tag yang diklik
+      tag.classList.add('active');
+
+      // Jika ingin filter produk berdasarkan kategori, bisa ditambahkan logika di sini
+      const selectedCategory = tag.textContent.trim().toLowerCase();
+      filterProducts(selectedCategory);
+    });
+  });
+
+  function filterProducts(category) {
+    const cards = document.querySelectorAll('.ts-card');
+
+    cards.forEach(card => {
+      // Ambil nama produk dari <h3>
+      const title = card.querySelector('h3').textContent.toLowerCase();
+
+      // Contoh logika dummy: tampilkan semua kalau "All needs" dipilih
+      if (category === 'all needs') {
+        card.style.display = 'block';
+      } else {
+        // Contoh sederhana: tampilkan produk jika namanya mengandung kategori (ubah sesuai kebutuhan)
+        if (title.includes(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      }
+    });
+  }
+</script>
+  <div class="section-divider2"></div>
+  </section>
+
+  <section class="container">
+    <body class="bg-[#f4f7f2]">
+    <!-- Left Image -->
+    <div class="image-section">
+      <img src="velvety/i1.png" alt="Illustration" class="image" />
+    </div>
+
+    <!-- Right Text Content -->
+    <div class="text-section">
+      <p class="subtitle">Try Our Service</p>
+      <h1 class="headline" style="font-family: 'Ivy Mode'; font-weight: normal;">
+        Your skin diagnosis in <br />
+        3 minutes
+      </h1>
+      <p class="description">
+        Say hello to a more radiant, healthier you with personalized skincare that’s as unique as you are.
+      </p>
+      <button class="custom-button">
+        Start my diagnosis <span>→</span>
+      </button>
+    </div>
+  </section>
+ 
+     <div class="section-divider6"></div>
+    <section class="testimonial-section">
+    <div class="container">
+      <!-- Gambar produk -->
+      <div class="image-wrapper">
+        <div class="image-oval">
+          <img src="velvety/pp.png" alt="Produk HOLOCENA" class="product-image">
+        </div>
+      </div>
+
+      <!-- Teks + Panah -->
+      <div class="right-content">
+        <div class="text-wrapper">
+          <p class="label">Product Testimonials</p>
+          <div class="stars1"><svg width="246" height="39" viewBox="0 0 246 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 2.875L13.5969 13.8238L1.52002 15.5694L10.26 24.0956L8.19377 36.125L19 30.4487L29.8063 36.125L27.74 24.0956L36.48 15.5813L24.4031 13.8238L19 2.875Z" fill="#3C5E39"/>
+<path d="M71 2.875L65.5969 13.8238L53.52 15.5694L62.26 24.0956L60.1938 36.125L71 30.4487L81.8063 36.125L79.74 24.0956L88.48 15.5813L76.4031 13.8238L71 2.875Z" fill="#3C5E39"/>
+<path d="M123 2.875L117.597 13.8238L105.52 15.5694L114.26 24.0956L112.194 36.125L123 30.4487L133.806 36.125L131.74 24.0956L140.48 15.5813L128.403 13.8238L123 2.875Z" fill="#3C5E39"/>
+<path d="M175 2.875L169.597 13.8238L157.52 15.5694L166.26 24.0956L164.194 36.125L175 30.4487L185.806 36.125L183.74 24.0956L192.48 15.5813L180.403 13.8238L175 2.875Z" fill="#3C5E39"/>
+<path d="M227 2.875L221.597 13.8238L209.52 15.5694L218.26 24.0956L216.194 36.125L227 30.4487L237.806 36.125L235.74 24.0956L244.48 15.5813L232.403 13.8238L227 2.875Z" fill="#3C5E39"/>
+</svg>
+</div>
+          <p class="testimonial" style="font-family: 'Ivy Mode'; font-weight: normal;">
+            “I’ve been feeling pretty stressed with my skin lately, so I picked up a set of 
+            <strong>HOLOCENA</strong> skincare. Oh my goodness! It was 
+            <strong>AMAZING</strong>. My skin felt so soft and moisturized”
+          </p>
+          <p class="author">- Customer Review</p>
+        </div>
+
+        <!-- Panah dan dots -->
+        <div class="arrow-column">
+          <span class="arrow"><svg width="31" height="19" viewBox="0 0 31 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.1826 0.975098V0.977051C19.1829 0.977992 19.1831 0.979505 19.1836 0.980957C19.1846 0.98398 19.1867 0.98853 19.1885 0.993652C19.192 1.00393 19.1968 1.01847 19.2031 1.03662C19.2161 1.0738 19.2358 1.12732 19.2607 1.19482C19.3106 1.32989 19.3837 1.52308 19.4814 1.75928C19.6767 2.23122 19.9699 2.88134 20.3604 3.59717C21.1314 5.01071 22.3275 6.76174 23.9775 7.86182C24.6438 8.30598 25.3322 8.67624 26.001 8.98779H0.893555V10.4878H26.001C25.3322 10.7994 24.6438 11.1696 23.9775 11.6138C22.3275 12.7138 21.1314 14.4648 20.3604 15.8784C19.9699 16.5943 19.6768 17.2443 19.4814 17.7163C19.3837 17.9525 19.3106 18.1457 19.2607 18.2808C19.2358 18.3483 19.2162 18.4018 19.2031 18.439C19.1968 18.4571 19.192 18.4716 19.1885 18.4819C19.1867 18.4871 19.1846 18.4916 19.1836 18.4946C19.1831 18.4961 19.1829 18.4976 19.1826 18.4985V18.5005L20.6045 18.9751L20.6055 18.9741C20.6059 18.9728 20.6064 18.9704 20.6074 18.9673C20.6097 18.9605 20.614 18.9497 20.6191 18.9351C20.6295 18.9054 20.6451 18.8595 20.667 18.8003C20.7108 18.6815 20.7785 18.5072 20.8682 18.2905C21.0478 17.8563 21.3174 17.256 21.6768 16.5972C22.4057 15.2608 23.4598 13.7617 24.8096 12.8618C26.2269 11.9169 27.7766 11.3189 28.9844 10.9565C29.5855 10.7762 30.0957 10.656 30.4531 10.5815C30.6315 10.5444 30.7715 10.5187 30.8652 10.5024C30.9118 10.4944 30.947 10.4884 30.9697 10.4849C30.981 10.4831 30.9901 10.4817 30.9951 10.481L31 10.48L30.9473 9.73779L31 8.99561L30.9951 8.99463C30.9901 8.99388 30.981 8.9925 30.9697 8.99072C30.947 8.98714 30.9118 8.9812 30.8652 8.97314C30.7715 8.95692 30.6315 8.93119 30.4531 8.89404C30.0957 8.81958 29.5854 8.69936 28.9844 8.51904C27.7767 8.15672 26.2268 7.55862 24.8096 6.61377C23.4598 5.7139 22.4057 4.21474 21.6768 2.87842C21.3174 2.21956 21.0478 1.61923 20.8682 1.18506C20.7785 0.968433 20.7108 0.794042 20.667 0.675293C20.6451 0.616054 20.6295 0.570171 20.6191 0.540527C20.614 0.525868 20.6097 0.515019 20.6074 0.508301C20.6064 0.505222 20.6059 0.502762 20.6055 0.501465L20.6045 0.500488L19.1826 0.975098Z" fill="#213721"/>
+</svg>
+</span>
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <span class="arrow"><svg width="31" height="20" viewBox="0 0 31 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7111 1.07715V1.0791C12.7107 1.08004 12.7106 1.08156 12.7101 1.08301C12.7091 1.08603 12.707 1.09058 12.7052 1.0957C12.7017 1.10598 12.6969 1.12052 12.6906 1.13867C12.6775 1.17585 12.6579 1.22937 12.6329 1.29688C12.5831 1.43194 12.51 1.62513 12.4122 1.86133C12.2169 2.33327 11.9238 2.98339 11.5333 3.69922C10.7623 5.11276 9.56617 6.86379 7.91614 7.96387C7.24989 8.40803 6.56148 8.77829 5.8927 9.08984H31.0001V10.5898H5.8927C6.56151 10.9014 7.24986 11.2716 7.91614 11.7158C9.56622 12.8159 10.7622 14.5669 11.5333 15.9805C11.9238 16.6963 12.2169 17.3464 12.4122 17.8184C12.51 18.0546 12.5831 18.2477 12.6329 18.3828C12.6579 18.4503 12.6775 18.5038 12.6906 18.541C12.6969 18.5592 12.7017 18.5737 12.7052 18.584C12.707 18.5891 12.709 18.5936 12.7101 18.5967C12.7106 18.5981 12.7108 18.5996 12.7111 18.6006V18.6025L11.2892 19.0771L11.2882 19.0762C11.2878 19.0748 11.2873 19.0724 11.2863 19.0693C11.2839 19.0626 11.2797 19.0518 11.2745 19.0371C11.2641 19.0074 11.2486 18.9616 11.2267 18.9023C11.1828 18.7836 11.1152 18.6092 11.0255 18.3926C10.8458 17.9584 10.5763 17.3581 10.2169 16.6992C9.48799 15.3629 8.43387 13.8637 7.08411 12.9639C5.6668 12.019 4.11703 11.4209 2.9093 11.0586C2.3082 10.8783 1.79796 10.7581 1.44055 10.6836C1.26219 10.6464 1.1222 10.6207 1.02844 10.6045C0.981884 10.5964 0.9467 10.5905 0.92395 10.5869C0.912643 10.5851 0.903532 10.5838 0.89856 10.583L0.893677 10.582L0.946411 9.83984L0.893677 9.09766L0.89856 9.09668C0.903541 9.09593 0.912674 9.09455 0.92395 9.09277C0.946701 9.08919 0.981914 9.08325 1.02844 9.0752C1.1222 9.05897 1.26222 9.03324 1.44055 8.99609C1.79796 8.92163 2.30823 8.80141 2.9093 8.62109C4.11702 8.25877 5.66683 7.66067 7.08411 6.71582C8.43383 5.81595 9.48801 4.3168 10.2169 2.98047C10.5763 2.32161 10.8459 1.72128 11.0255 1.28711C11.1151 1.07048 11.1828 0.896093 11.2267 0.777344C11.2486 0.718104 11.2641 0.672222 11.2745 0.642578C11.2797 0.627919 11.284 0.61707 11.2863 0.610352C11.2873 0.607273 11.2878 0.604812 11.2882 0.603516L11.2892 0.602539L12.7111 1.07715Z" fill="#213721"/>
+</svg>
+</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div class="section-divider6"></div>
+
+  <!-- Benefits Section -->
+   <section class="benefits-section">
+    <!-- Benefit 1 -->
+    <div class="benefit-item">
+      <img src="velvety/Container.png" alt="Loyalty Icon" class="benefit-icon" />
+      <p class="benefit-subtitle">Loyalty Program</p>
+      <h3 class="benefit-title" style="font-family: 'Ivy Mode'; font-weight: normal;">For Happy Skin</h3>
+      <button class="benefit-button">
+        Join the program <span class="arrow">→</span>
+      </button>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Benefit 2 -->
+    <div class="benefit-item">
+      <img src="velvety/Container (1).png" alt="Referral Icon" class="benefit-icon" />
+      <p class="benefit-subtitle">Organic beauty is shared,</p>
+      <h3 class="benefit-title" style="font-family: 'Ivy Mode'; font-weight: normal;">Sponsor those you love!</h3>
+      <button class="benefit-button">
+        Refer a Friend <span class="arrow">→</span>
+      </button>
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Benefit 3 -->
+    <div class="benefit-item">
+      <img src="velvety/Container (2).png" alt="Treatments Icon" class="benefit-icon" />
+      <p class="benefit-subtitle">Treat yourself to good weather</p>
+      <h3 class="benefit-title" style="font-family: 'Ivy Mode'; font-weight: normal;">at Maison Absolution</h3>
+      <button class="benefit-button">
+        Try Our Treatments <span class="arrow">→</span>
+      </button>
+    </div>
+  </section>
+<div class="bg-[#7d9472] text-white px-4 py-8 md:px-20 md:py-16 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+  <h2 class="text-4xl md:text-5xl lg:text-[64px] font-light leading-tight md:max-w-[50%]">
+    Subscribe to get 10% off your first order
+  </h2>
+  <div class="w-full md:w-auto flex">
+    <input type="email" placeholder="Drop your email here"
+      class="w-full md:w-[400px] px-6 py-5 text-[#7d9472] text-base rounded-l-md focus:outline-none" />
+    <button class="bg-white px-6 py-5 rounded-r-md border-l border-[#7d9472] text-[#7d9472] text-xl">
+      →
+    </button>
+  </div>
+</div>
+
+
+<!-- Font Awesome CDN (wajib diletakkan di <head>) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-ZhvAExD7oUFC6K0z+KZG93HElOaQf6+5DE/jHj6GlEeaRuEl5RCc+naKh7iDWBH57uHhR4xLRNzFzGvB9qtW8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/abc123def456.js" crossorigin="anonymous"></script>
+<!-- Footer -->
+<footer class="footer">
+  <!-- Grid Footer -->
+  <div class="footer-container">
+    <div class="footer-grid">
+
+      <!-- Column 1 -->
+      <div class="footer-column border-right">
+        <div>
+          <h1 class="footer-title">VELVETY</h1>
+          <p class="footer-subtitle">Facial & skincare</p>
+        </div>
+        <div>
+          <p class="footer-section-title">Opening hours</p>
+          <p>Monday to Saturday:<br>10:30 a.m. to 7 p.m.</p>
+        </div>
+       <div class="footer-icons">
+  <a href="#" class="icon-box"><i class="fa-brands fa-instagram"></i></a>
+  <a href="#" class="icon-box"><i class="fa-brands fa-twitter"></i></a>
+  <a href="#" class="icon-box"><i class="fa-brands fa-facebook-f"></i></a>
+</div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-column border-right">
+        <h2 class="footer-section-title">Shop</h2>
+        <a href="#">Skincare</a>
+        <a href="#">Facial</a>
+        <a href="#">Soap</a>
+        <a href="#">Candles</a>
+        <a href="#">Auto Fragrances</a>
+        <a href="#">Gifts</a>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-column border-right">
+        <h2 class="footer-section-title">Help Desk</h2>
+        <a href="#">Chat</a>
+        <a href="#">FAQ</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Contact</a>
+        <a href="#">Policies</a>
+        <a href="#">Accessibility</a>
+        <a href="#">My Account</a>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-column">
+        <h2 class="footer-section-title">Stores</h2>
+        <a href="#">Manhattan</a>
+        <a href="#">Brooklyn</a>
+        <a href="#">Tokyo</a>
+        <a href="#">Jakarta</a>
+        <a href="#">Paris</a>
+        <a href="#">Buenos Aires</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE CREDITS - Mobile -->
+  <div class="footer-credits-mobile">
+    SITE CREDITS     ©2023 VELVETY
+  </div>
+
+  <!-- SITE CREDITS - Desktop -->
+  <div class="footer-credits-desktop">
+    SITE CREDITS     ©2023 VELVETY
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom-bar">
+    <p>© Designed by <strong>DhuhaCreative</strong>. Powered by <strong>UI8</strong>.</p>
+    <div class="footer-links">
+      <a href="#">Licenses</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add('scroll-active');
+    } else {
+      navbar.classList.remove('scroll-active');
+    }
+  });
+</script>
+<script>
+  function toggleMobileMenu() {
+    const menu = document.querySelector(".menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+  }
+</script>
+<script>
+  function toggleMobileMenu() {
+    const menu = document.querySelector(".menu");
+    if (menu.style.display === "flex") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "flex";
+    }
+  }
+</script>
+<script>
+  function toggleMobileMenu() {
+    const sidebar = document.getElementById('mobileSidebar');
+    sidebar.classList.toggle('show');
+  }
+</script>
+<script>
+  window.addEventListener("scroll", function () {
+    const navbar = document.getElementById("navbar");
+    console.log("ScrollY:", window.scrollY); // Tambahkan log ini
+
+    if (window.scrollY > 50) {
+      console.log("Menambahkan class scroll-active");
+      navbar.classList.add("scroll-active");
+    } else {
+      console.log("Menghapus class scroll-active");
+      navbar.classList.remove("scroll-active");
+    }
+  });
+</script>
+
+</body>
+</html>

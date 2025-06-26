@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      color: white;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      z-index: 1000;
+    }
+
+    .topbar.scroll-active {
+      background-color: #8c9b85;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      margin-top: 100px;
+      height: 2000px;
+      background: linear-gradient(white, #ddd);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar" id="navbar">
+    Scroll Me!
+  </header>
+
+  <div class="content">
+    Scroll ke bawah untuk lihat efek navbar
+  </div>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        navbar.classList.add('scroll-active');
+      } else {
+        navbar.classList.remove('scroll-active');
+      }
+    });
+  </script>
+</body>
+</html>

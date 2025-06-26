@@ -1,0 +1,191 @@
+// Variabel untuk warna
+$primary-bg: #8fa287;
+$btn-bg: #f0f4ed;
+$btn-hover-bg: #e6ede1;
+$text-dark: #1c2b1f;
+$white: #ffffff;
+$gray: #ddd;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'EB Garamond', serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  width: 1440px;
+  height: 734px; // atau 100vh
+  margin: auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .left-side, .right-side {
+    height: auto;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.left-side {
+  width: 49.3055555556%;
+  height: 733px;
+  background-color: $primary-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .logo {
+    font-family: serif;
+    font-size: 28px;
+    color: $white;
+    margin-bottom: 40px;
+    position: absolute;
+    top: 0.03px;
+    left: 100px;
+    gap: 8px;
+
+    span {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: $gray;
+      line-height: 0.5%;
+    }
+  }
+
+  .product-img {
+    height: 800px;
+    transform: rotate(-5deg);
+    position: absolute;
+    bottom: -100px;
+    z-index: 10;
+    right: 0;          
+
+    &:hover {
+      transform: rotate(-5deg) scale(1.05);
+    }
+  }
+}
+
+.right-side {
+  width: 50.6944444%;
+  background: url("velvety/Image.png") center center / cover no-repeat;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .top-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+
+    nav {
+      a {
+        color: $white;
+        text-decoration: none;
+        margin-left: 25px;
+        font-size: 14px;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 60px;
+    transform: translateX(-150px);
+
+    h1 {
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 1.1;
+      margin-bottom: 40px;
+      position: relative;
+      left: -18px;
+    }
+  }
+
+  .shop-btn {
+    position: absolute;
+    bottom: 50px;
+    left: 1%;
+    transform: translateX(20%);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 90px;
+    background-color: $btn-bg;
+    color: $text-dark;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: none;
+
+    .arrow {
+      font-size: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      background-color: $btn-hover-bg;
+      transform: translateX(20%) scale(1.05);
+
+      .arrow {
+        transform: translateX(5px);
+      }
+    }
+  }
+}
+
+.scroll-nav {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white;
+  font-size: 18px;
+
+  .dots {
+    span {
+      width: 5px;
+      height: 5px;
+      background: $white;
+      border-radius: 50%;
+      display: block;
+      margin: 5px 0;
+    }
+  }
+
+  .arrow {
+    font-size: 18px;
+  }
+}
