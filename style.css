@@ -9,8 +9,23 @@
   font-size: 40px;
 }
 
+
+
 .cta-bar .cta-text {
   font-weight: 300;
+  text-align: left;
+}
+
+
+.cta-inner {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;               /* Tengahin kontennya */
+  display: flex;
+  justify-content: space-between; /* Teks kiri, panah kanan */
+  align-items: center;
+  padding: 0 40px;              /* Jarak dalam di dalam 1440 */
+  box-sizing: border-box;
 }
 
 .cta-bar .cta-arrow img {
@@ -51,11 +66,7 @@
   box-sizing: border-box;
 }
 
-body, html {
-  font-family: "EB Garamond", serif;
-  height: 100%;
-  overflow-x: hidden;
-}
+
 
 .hero {
   display: none; /* default: hidden, nanti ditampilkan saat min-width >= 769px */
@@ -66,7 +77,15 @@ body, html {
 }
 
 /* HERO SECTION */
+body {
+  overflow-x: hidden;
+}
 
+ body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #111;
+      min-height: 2000px; /* biar bisa discroll */
+    }
 .topbar {
   width: 100%;
   height: 84px;
@@ -79,68 +98,62 @@ body, html {
   left: 0;
   right: 0;
   z-index: 1001;
-  background-color: transparent; /* 🌟 transparan awal */
+  background-color: transparent; /* 🌟 awal transparan */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 🌿 Saat di-scroll, background berubah jadi hijau */
+
+/* 🌿 Saat discroll: berubah warna dan ada bayangan */
 .topbar.scroll-active {
-  background-color: #99c783;
+  background-color: #4c6341;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.scroll-active {
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
+.brand h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
 
+.brand p {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 2px;
+}
 
-    .brand {
-      display: flex;
-      flex-direction: column;
-      color: white;
-    }
+.menu {
+  display: flex;
+  align-items: center;
+}
 
-    .brand h1 {
-      font-size: 24px;
-      letter-spacing: 2px;
-      font-weight: normal;
-    }
+.menu-cluster {
+  display: flex;
+  align-items: center;
+}
 
-    .brand p {
-      font-size: 12px;
-      font-style: italic;
-      margin-top: 2px;
-    }
+.menu-cluster a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 30px;
+  transition: 0.3s;
+}
 
-    .menu {
-      display: flex;
-      align-items: center;
-    }
+.menu-cluster a:hover {
+  text-decoration: underline;
+}
 
-    .menu-cluster {
-      display: flex;
-      align-items: center;
-    }
+.menu .menu-cluster:last-child {
+  margin-left: 250px;
+}
 
-    .menu-cluster a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-      margin-left: 30px;
-      transition: 0.3s;
-    }
-
-    .menu-cluster a:hover {
-      text-decoration: underline;
-    }
-
-    .menu .menu-cluster:last-child {
-      margin-left: 250px;
-    }
-
-    .static-menu {
+.static-menu {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -157,12 +170,63 @@ body, html {
 .static-menu a:hover {
   text-decoration: underline;
 }
+@media (min-width: 2000px) and (max-width: 3000px) {
+  .topbar {
+    padding: 20px 160px; /* ⬅️ tambahkan padding kiri-kanan biar seimbang di layar lebar */
+    height: 100px;        /* tinggi navbar bisa ditambah agar proporsional */
+  }
+
+  .brand {
+    margin-left: 500px;
+  }
+  .brand h1 {
+    font-size: 28px; /* perbesar sedikit font judul */
+  }
+
+  .brand p {
+    font-size: 14px;
+  }
+
+  .menu-cluster a,
+  .static-menu a {
+    font-size: 16px; /* font link dinaikkan agar terbaca nyaman di layar besar */
+    margin-left: 40px;
+  }
+
+  .menu .menu-cluster:last-child {
+    margin-left: 300px; /* jarak kanan tambahan jika perlu */
+  }
+
+  .static-menu {
+    gap: 40px;
+  }
+}
+
 
 .hero {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  width: 100vw;       /* Lebar penuh layar */
-  height: 100vh;      /* Tinggi penuh layar */
-  margin: 0;          /* Hilangkan margin agar nempel ke tepi */
+  justify-content: center; /* ⬅️ ini penting */
+  background-color: #899F87; /* warna bg kiri */
+}
+
+@media (min-width: 2000px) and (max-width: 3000px) {
+  .hero {
+    width: 100vw;
+    height: 920px; /* atau kamu bisa pakai clamp(600px, 70vh, 800px) */
+    display: flex;
+    justify-content: center;
+    background-color: #899F87;
+    overflow: hidden; /* untuk jaga-jaga kalau ada elemen keluar batas */
+  }
+}
+
+.container-hero {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
 }
 
 
@@ -194,12 +258,18 @@ body, html {
 .left-side .product-img {
   height: 720px;
   transform: rotate(-5deg);
-  position: absolute;
+  position: relative;
   bottom: -100px;
   z-index: 10;
   right: 0;
-  left: 25%;
+  left: auto;
 }
+
+
+
+
+
+
 
 .left-side .product-img:hover {
   transform: rotate(-5deg) scale(1.05);
@@ -352,7 +422,168 @@ body, html {
   position: relative;
   z-index: 1;
 }
+.container-hero {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
+.scroll-nav {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; /* VERTIKAL ✅ */
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.scroll-nav .arrow {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-nav .arrow.up {
+  transform: rotate(270deg); /* atas */
+}
+
+.scroll-nav .arrow.down {
+  transform: rotate(360deg); /* hadap ke kiri */
+  margin-left: -90px;
+}
+
+
+.scroll-nav .dots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 100px;
+  margin-left: -95px;
+}
+
+.scroll-nav .dots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #E4ECE0;
+  opacity: 0.6;
+}
+
+.scroll-nav .dots span:first-child {
+  opacity: 1;
+  width: 6px;
+  height: 6px;
+}
+.container-hero {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto; /* agar selalu di tengah layar */
+  height: 100%;
+  display: flex;
+}
+
+
+
+
+@media (min-width: 2000px) and (max-width: 3000px) {
+  .container-hero {
+    max-width: 1800px;
+    padding: 0 40px;
+  }
+
+  .left-side .product-img {
+    height: 850px;
+    position: relative;
+    left: 300px; /* ➡️ GESER KE KANAN */
+  }
+
+  .right-side .text-box {
+    padding: 0 100px;
+    transform: translateX(-120px);
+  }
+
+  .right-side .text-box h1 {
+    font-size: 90px;
+  }
+
+  .right-side .shop-btn {
+    padding: 24px 100px;
+    font-size: 22px;
+    margin-left: -60px;
+  }
+
+ 
+
+  .left-side .logo {
+    left: 140px;
+  }
+  .scroll-nav {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; /* VERTIKAL ✅ */
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+}
+
+.scroll-nav .arrow {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 600px;
+}
+
+.scroll-nav .arrow.up {
+  transform: rotate(270deg); /* atas */
+  margin-left: 1200px;
+}
+
+.scroll-nav .arrow.down {
+  transform: rotate(360deg); /* hadap ke kiri */
+  margin-left: -90px;
+}
+
+
+.scroll-nav .dots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 100px;
+  margin-left: -95px;
+}
+
+.scroll-nav .dots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #E4ECE0;
+  opacity: 0.6;
+}
+
+.scroll-nav .dots span:first-child {
+  opacity: 1;
+  width: 6px;
+  height: 6px;
+}
+  
+}
 
 
 /* Tampilkan hamburger di mobile */
@@ -387,7 +618,7 @@ body, html {
   .hero {
     display: flex;
     flex-direction: row;
-    min-height: 150vh;
+    min-height: 120vh;
     width: 100vw;
     position: relative;
   }
@@ -471,9 +702,9 @@ body, html {
 
 .left-side .product-img {
   position: absolute;
-  height: 500px;
+  height: 350px;
   left: 78%;
-  top: 57%;
+  top: 69%;
   transform: translate(-50%, -50%);
   z-index: 10; /* Lebih tinggi dari teks, tapi hanya untuk gambar ini */
 }
@@ -521,7 +752,7 @@ body, html {
 }
 
 .right-side .shop-btn {
-  margin-top: 450px; /* Hanya jarak antar teks & tombol */
+  margin-top: 350px; /* Hanya jarak antar teks & tombol */
   padding: 15px 50px;
   font-size: 16px;
   font-weight: 500;
@@ -1045,6 +1276,16 @@ body, html {
   overflow: hidden;
 }
 
+@media (min-width: 2000px) and (max-width: 3000px) {
+  .nature-section {
+    display: flex;
+    width: 100vw;
+    height: 720px; /* atau bisa juga pakai clamp(600px, 70vh, 800px) */
+    overflow: hidden;
+  }
+}
+
+
 .nature-section .nature-left {
   flex: 1;
   padding: 2.6svw;
@@ -1068,13 +1309,23 @@ body, html {
 
 .nature-section .nature-right {
   flex: 1;
-  padding: 40px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #E4ECE0;
 }
 
+@media (min-width: 2000px) and (max-width: 3000px) {
+  .nature-section .nature-right {
+    flex: 1;
+    padding: 60px 100px; /* ⬅️ tambahkan padding biar konten ga terlalu mepet */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E4ECE0;
+  }
+}
 .nature-feature {
   display: flex;
   align-items: center; /* tadinya flex-start */
@@ -1108,6 +1359,49 @@ body, html {
   font-size: 1.6vw;
   line-height: 1.5;
 }
+
+@media (min-width: 2000px) {
+  .nature-left h1 {
+    font-size: 2vw; /* lebih besar dari sebelumnya */
+    max-width: 80%;
+    margin-left: 400px;
+    text-align: center;
+    align-items: auto;
+  }
+
+  .nature-image {
+    max-width: 600px;
+    margin-left: auto;
+    align-items: left;
+  }
+
+  .feature-text h3 {
+    font-size: 1.5vw;
+  }
+
+  .feature-text p {
+    font-size: 1vw;
+  }
+
+  .nature-feature {
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+
+  .feature-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nature-section .nature-left {
+    padding: 4vw;
+  }
+
+  .nature-right-inner {
+    padding: 0 4vw;
+  }
+}
+
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .nature-section {
@@ -1208,6 +1502,12 @@ body, html {
 /* --- SECTION LAYOUT --- */
 .section {
   padding: 60px 40px;
+}
+.section-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 .section-subtitle {
   text-align: center;
@@ -2935,6 +3235,11 @@ body {
 
 .icon-box:hover {
   background-color: #dfe6d6;
+}
+.container-footer {
+  max-width: 1600px;
+  margin: 0 auto;
+
 }
 
 
