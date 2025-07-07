@@ -2160,10 +2160,13 @@ opacity: 1;
   font-size: 56px;
   color: #2c3e2f;
   margin-bottom: 30px;
-  max-width: 90%;
-  text-align: center;
   margin-top: 50px;
+  max-width: 100%;         /* ⬅️ Supaya cukup lebar */
+  text-align: left;        /* ⬅️ Supaya teks tidak di tengah */
+  line-height: 1.1;        /* ⬅️ Supaya baris teks lebih rapat */
+  letter-spacing: -0.5px;  /* ⬅️ (Opsional) biar huruf makin padat */
 }
+
 
 .nature-image {
   width: 100%;
@@ -2889,13 +2892,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 .main-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 60px 40px;
-}
-
-.main-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 60px 40px;
+  padding: 60px 0px;
 }
 
 .about-section {
@@ -2931,8 +2928,12 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   line-height: 1.4;
   letter-spacing: normal;
   color: #3C5E39;
-  padding-left: 35px; /* ⬅️ geser isi ke kanan */
+  padding-left: 95px;
   margin-top: -50px;
+
+  /* ⬇️ Tambahan biar teks bisa melebar */
+  max-width: 100%;
+  width: 100%;
 }
 
 
@@ -3346,10 +3347,10 @@ body {
 }
 
 .ts-shop-btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: flex-end;
-  padding: 0 6rem;
+  padding: 0 8.5rem;
 }
 
 .ts-shop-btn button {
@@ -3871,7 +3872,7 @@ body {
 
 .image {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
 }
 
@@ -4123,6 +4124,16 @@ body {
   border-bottom: 1px dashed #c0c0c0;
 }
 
+.section-divider9 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-700px); /* mirip efek margin-left: -700px */
+  width: 1000%;
+  border-bottom: 1px dashed #c0c0c0;
+  z-index: 0;
+  margin-top: 30px;
+}
+
 .section-divider2 {
   position: relative;
   left: 50%;
@@ -4330,16 +4341,27 @@ height: 38px;
 }
 
 
-    .testimonial {
+.testimonial {
   font-size: 40px;
   font-weight: 300;
   color: #1e2d1f;
-  line-height: 1.6;
+  line-height: 1.3;           /* 🔽 Lebih rapat, jadi tidak terlalu tinggi */
   margin-bottom: 16px;
   font-family: 'Ivy Mode', sans-serif;
-  max-width: 900px;
+}
+.testimonial-slide {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* agar teks mulai dari kiri */
+}
+.testimonial-slider,
+.slider-track {
+  max-width: 100%;
   width: 100%;
 }
+
 
 
     .author {
