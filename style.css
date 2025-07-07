@@ -2132,7 +2132,7 @@ opacity: 1;
 .nature-section {
   display: flex;
   width: 100vw;
-  height: 55vh;
+  height: 45vh;
   overflow: hidden;
 }
 }
@@ -2909,7 +2909,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   color: #899F87;
   margin-bottom: 10px;
   letter-spacing: 0.8px;
-   font-family: 'Aileron, sans serif';
+   font-family: 'Aileron', sans-serif;
    margin-left: -100px;
    margin-top: -50px;
 }
@@ -2917,7 +2917,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   font-size: 56px;
   font-weight: normal;
   line-height: 1.3;
-   font-family: 'Ivy Mode, sans serif';
+   font-family: 'Ivy Mode', sans-serif;
    margin-left: -100px;
 }
 .about-section .about-right {
@@ -3872,7 +3872,7 @@ body {
 
 .image {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   height: auto;
 }
 
