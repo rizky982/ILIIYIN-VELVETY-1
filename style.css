@@ -2132,7 +2132,7 @@ opacity: 1;
 .nature-section {
   display: flex;
   width: 100vw;
-  height: 60vh;
+  height: 55vh;
   overflow: hidden;
 }
 }
@@ -2914,6 +2914,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   letter-spacing: 0.8px;
    font-family: 'Aileron, sans serif';
    margin-left: -100px;
+   margin-top: -50px;
 }
 .about-section .about-left h1 {
   font-size: 56px;
@@ -2931,6 +2932,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   letter-spacing: normal;
   color: #3C5E39;
   padding-left: 35px; /* ⬅️ geser isi ke kanan */
+  margin-top: -50px;
 }
 
 
@@ -4110,7 +4112,7 @@ body {
 
 .section-divider {
   width: 80%;
-  margin: -20px auto 20px auto;
+  margin: -50px auto 20px auto;
   border-bottom: 1px dashed #c0c0c0;
 }
 
