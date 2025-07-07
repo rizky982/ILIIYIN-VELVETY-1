@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 40px;
-  margin-top: 60px; /* ⬅️ Tambahkan ini */
+  margin-top: 70px; /* ⬅️ Tambahkan ini */
 }
 
 .cta-bar .cta-text {
@@ -2132,7 +2132,7 @@ opacity: 1;
 .nature-section {
   display: flex;
   width: 100vw;
-  height: 60vh;
+  height: 55vh;
   overflow: hidden;
 }
 }
@@ -2435,7 +2435,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 @media (min-width: 1440px) and (max-width: 1480px) {
   
 .product-card {
-  width: 700px;
+  width: 600px;
   padding: 32px;
   background-color: #f5f7ef;
   display: flex;
@@ -2928,7 +2928,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   line-height: 1.4;
   letter-spacing: normal;
   color: #3C5E39;
-  padding-left: 95px;
+  padding-left: 75px;
   margin-top: -50px;
 
   /* ⬇️ Tambahan biar teks bisa melebar */
@@ -4131,7 +4131,7 @@ body {
   width: 1000%;
   border-bottom: 1px dashed #c0c0c0;
   z-index: 0;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .section-divider2 {
@@ -4148,7 +4148,7 @@ body {
 
 .section-divider6 {
   width: 1000%;
-  margin: 50px auto 0px -800px;
+  margin: 90px auto 0px -800px;
   border-bottom: 1px dashed #c0c0c0;
 }
 
