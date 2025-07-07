@@ -2128,6 +2128,15 @@ opacity: 1;
   overflow: hidden;
 }
 
+@media (min-width: 1440px) and (max-width: 1480px) {
+.nature-section {
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+}
+}
+
 @media (min-width: 2000px) and (max-width: 3000px) {
   .nature-section {
     display: flex;
@@ -2420,6 +2429,18 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   border-left: 1px dashed #c2c0c0;
 }
 
+@media (min-width: 1440px) and (max-width: 1480px) {
+  
+.product-card {
+  width: 700px;
+  padding: 32px;
+  background-color: #f5f7ef;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-left: 1px dashed #c2c0c0;
+}
+}
 .product-card:first-child {
   border-left: none;
 }
@@ -3250,9 +3271,9 @@ body {
 
 .ts-products {
   display: grid;
- grid-template-columns: repeat(2, minmax(290px, 1fr));
+ grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 20px; /* Hapus gap agar garis bisa tersambung */
-  padding-left: 100px;
+  
 }
 .ts-card.hidden {
   visibility: hidden;
@@ -3847,7 +3868,7 @@ body {
 
 .image {
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
   height: auto;
 }
 
@@ -4307,13 +4328,16 @@ height: 38px;
 
 
     .testimonial {
-      font-size: 40px;
-      font-weight: 300;
-      color: #1e2d1f;
-      line-height: 1.6;
-      margin-bottom: 16px;
-      font-family: 'Ivy Mode, sans serif';
-    }
+  font-size: 40px;
+  font-weight: 300;
+  color: #1e2d1f;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-family: 'Ivy Mode', sans-serif;
+  max-width: 900px;
+  width: 100%;
+}
+
 
     .author {
       font-size: 20px;
@@ -4621,6 +4645,15 @@ height: 38px;
   filter: brightness(0) saturate(100%) invert(33%) sepia(17%) saturate(300%) hue-rotate(65deg) brightness(90%) contrast(90%);
 }
 
+@media (min-width: 1440px) and (max-width: 1480px) {
+  .benefit-icon {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 1.5rem;
+  margin-left: 130px; /* Tambahkan ini untuk geser ke kanan */
+  filter: brightness(0) saturate(100%) invert(33%) sepia(17%) saturate(300%) hue-rotate(65deg) brightness(90%) contrast(90%);
+}
+}
 
 .benefit-subtitle {
   font-size:20px;
