@@ -2433,17 +2433,18 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 }
 
 @media (min-width: 1440px) and (max-width: 1480px) {
-  
-.product-card {
-  width: 600px;
-  padding: 32px;
-  background-color: #f5f7ef;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  border-left: 1px dashed #c2c0c0;
+  .product-card {
+    width: 500px;
+    height: 700px; /* ← tambahkan ini */
+    padding: 32px;
+    background-color: #f5f7ef;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-left: 1px dashed #c2c0c0;
+  }
 }
-}
+
 .product-card:first-child {
   border-left: none;
 }
