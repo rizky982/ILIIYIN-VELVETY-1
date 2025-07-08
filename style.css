@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 40px;
-  margin-top: 90px; /* ⬅️ Tambahkan ini */
+  margin-top: 65px; /* ⬅️ Tambahkan ini */
 }
 
 .cta-bar .cta-text {
@@ -4197,7 +4197,7 @@ body {
   width: 1000%;
   border-bottom: 1px dashed #c0c0c0;
   z-index: 0;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .section-divider2 {
@@ -4214,7 +4214,7 @@ body {
 
 .section-divider6 {
   width: 1000%;
-  margin: -10px auto 0px -800px;
+ transform: translateY(55px);
   border-bottom: 1px dashed #c0c0c0;
 }
 
