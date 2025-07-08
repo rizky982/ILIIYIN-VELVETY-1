@@ -251,7 +251,7 @@ font-family: 'Aileron', sans-serif;
 @media (min-width: 1440px) and (max-width: 1480px) {
   .hero {
     width: 100vw;
-    height: 700px; /* atau kamu bisa pakai clamp(600px, 70vh, 800px) */
+    height: 705.5px; /* atau kamu bisa pakai clamp(600px, 70vh, 800px) */
     display: flex;
     justify-content: center;
     background-color: #899F87;
@@ -2143,6 +2143,7 @@ opacity: 1;
   display: flex;
   width: 100vw;
   overflow: hidden;
+  height: 569.5px;
 }
 }
 
@@ -2444,7 +2445,6 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 @media (min-width: 1440px) and (max-width: 1480px) {
   .product-card {
     width: 500px;
-    height: 750px; /* ← tambahkan ini */
     padding: 32px;
     background-color: #f5f7ef;
     display: flex;
