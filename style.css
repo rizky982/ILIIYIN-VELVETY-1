@@ -251,7 +251,7 @@ font-family: 'Aileron', sans-serif;
 @media (min-width: 1440px) and (max-width: 1480px) {
   .hero {
     width: 100vw;
-    height: 705.5px; /* atau kamu bisa pakai clamp(600px, 70vh, 800px) */
+    height: 720px; /* atau kamu bisa pakai clamp(600px, 70vh, 800px) */
     display: flex;
     justify-content: center;
     background-color: #899F87;
@@ -2143,7 +2143,7 @@ opacity: 1;
   display: flex;
   width: 100vw;
   overflow: hidden;
-  height: 569.5px;
+  height: 580px;
 }
 }
 
@@ -2411,6 +2411,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   margin-left: auto;
   margin-right: auto;
   white-space: nowrap;       /* satu baris saja */
+  margin-top: 40px;
 }
 
 
@@ -2461,9 +2462,8 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 .image-box {
   width: 100%;
   aspect-ratio: 1 / 1.5;
-  position: relative;       /* penting agar posisi anak bisa absolute */
+  position: relative;
   margin-bottom: 20px;
-        /* potong gambar yang terlalu besar */
 }
 
 .image-box img {
@@ -2472,12 +2472,30 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   object-fit: contain;
   max-width: none;
   max-height: none;
-
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Ini yang memastikan tetap center */
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
 }
+
+/* Geser gambar ke-1 (CHICORI) ke kiri */
+/* Gambar ke-1 (CHICORI): geser ke kiri & perbesar */
+.product-card:nth-child(1) .image-box img {
+  transform: translate(calc(-50% - 30px), -50%) scale(1.15);
+}
+
+/* Gambar ke-2 (NOTORIOUS): tetap tengah & ukuran default */
+.product-card:nth-child(2) .image-box img {
+  transform: translate(-50%, -50%) scale(1.02);
+}
+
+/* Gambar ke-3 (HOLOCENA): geser ke kanan & perbesar */
+.product-card:nth-child(3) .image-box img {
+  transform: translate(calc(-50% + 30px), -50%) scale(1.15);
+}
+
+
 
 
 
@@ -2504,12 +2522,43 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   margin-left: 20px;
 }
 
+@media (min-width: 1440px) and (max-width: 1480px) {
+  .product-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  margin-left: 20px;
+  }
+
+  .product-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+  padding-left: 4px;
+}
+
+ .product-card:nth-child(1) .product-price {
+   margin-left: -60px;
+ }
+
+   .product-card:nth-child(1) .product-name {
+    margin-left: -60px;
+   }
+   .product-card:nth-child(3) .stars {
+  transform: scale(1.);         /* contoh: dibesarkan */
+  position: relative;
+  left: 70px;
+}
+}
+
+
 .stars {
   display: flex;
   align-items: center;
   gap: 6px;
   text-align: right;
-  
 }
 
 .stars-icon {
@@ -2574,9 +2623,10 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 }
 
 .stars svg {
-  height: 20px;
-  width: 116px;
+  transform: scale(1.);
+  transform-origin: right;
 }
+
 
 /* Mobile max 492px */
 /* Mobile & Tablet kecil (max 768px) */
@@ -3327,7 +3377,7 @@ body {
 }
 
 .ts-card-img img {
-  max-height: 300px;
+  max-height: 400px;
   object-fit: contain;
 }
 
@@ -4141,7 +4191,7 @@ body {
   width: 1000%;
   border-bottom: 1px dashed #c0c0c0;
   z-index: 0;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .section-divider2 {
@@ -4158,7 +4208,7 @@ body {
 
 .section-divider6 {
   width: 1000%;
-  margin: 90px auto 0px -800px;
+  margin: 10px auto 0px -800px;
   border-bottom: 1px dashed #c0c0c0;
 }
 
