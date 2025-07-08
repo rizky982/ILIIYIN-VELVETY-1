@@ -2446,6 +2446,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 @media (min-width: 1440px) and (max-width: 1480px) {
   .product-card {
     width: 500px;
+    height: 680px;
     padding: 32px;
     background-color: #f5f7ef;
     display: flex;
@@ -2482,17 +2483,20 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 /* Geser gambar ke-1 (CHICORI) ke kiri */
 /* Gambar ke-1 (CHICORI): geser ke kiri & perbesar */
 .product-card:nth-child(1) .image-box img {
-  transform: translate(calc(-50% - 30px), -50%) scale(1.15);
+  transform: translate(calc(-50% - 30px), -50%) scale(1.07);
+  top: 265px;
 }
 
 /* Gambar ke-2 (NOTORIOUS): tetap tengah & ukuran default */
 .product-card:nth-child(2) .image-box img {
   transform: translate(-50%, -50%) scale(1.02);
+  top: 265px;
 }
 
 /* Gambar ke-3 (HOLOCENA): geser ke kanan & perbesar */
 .product-card:nth-child(3) .image-box img {
-  transform: translate(calc(-50% + 30px), -50%) scale(1.15);
+  transform: translate(calc(-50% + 30px), -50%) scale(1.07);
+  top: 265px;
 }
 
 
@@ -2529,6 +2533,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   color: #1a1a1a;
   text-transform: uppercase;
   margin-left: 20px;
+  margin-top: -35px;
   }
 
   .product-price {
@@ -2625,6 +2630,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 .stars svg {
   transform: scale(1.);
   transform-origin: right;
+  margin-top: -10px;
 }
 
 
