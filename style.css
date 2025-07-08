@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 40px;
-  margin-top: 70px; /* ⬅️ Tambahkan ini */
+  margin-top: 110px; /* ⬅️ Tambahkan ini */
 }
 
 .cta-bar .cta-text {
@@ -248,6 +248,16 @@ font-family: 'Aileron', sans-serif;
   }
 }
 
+@media (min-width: 1440px) and (max-width: 1480px) {
+  .hero {
+    width: 100vw;
+    height: 700px; /* atau kamu bisa pakai clamp(600px, 70vh, 800px) */
+    display: flex;
+    justify-content: center;
+    background-color: #899F87;
+    overflow: hidden; /* untuk jaga-jaga kalau ada elemen keluar batas */
+  }
+}
 
 .container-hero {
   display: flex;
@@ -2132,7 +2142,6 @@ opacity: 1;
 .nature-section {
   display: flex;
   width: 100vw;
-  height: 50vh;
   overflow: hidden;
 }
 }
@@ -2435,7 +2444,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 @media (min-width: 1440px) and (max-width: 1480px) {
   .product-card {
     width: 500px;
-    height: 700px; /* ← tambahkan ini */
+    height: 750px; /* ← tambahkan ini */
     padding: 32px;
     background-color: #f5f7ef;
     display: flex;
@@ -4115,7 +4124,7 @@ body {
 
 .section-divider {
   width: 80%;
-  margin: -50px auto 20px auto;
+  margin: -10px auto 20px auto;
   border-bottom: 1px dashed #c0c0c0;
 }
 
@@ -4138,7 +4147,7 @@ body {
 .section-divider2 {
   position: relative;
   left: 50%;
-  transform: translateX(-700px); /* mirip efek margin-left: -700px */
+  transform: translateX(-800px); /* mirip efek margin-left: -700px */
   width: 1000%;
   border-bottom: 1px dashed #c0c0c0;
   z-index: 0;
