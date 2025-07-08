@@ -2977,7 +2977,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   letter-spacing: 0.8px;
    font-family: 'Aileron', sans-serif;
    margin-left: -100px;
-   margin-top: -50px;
+   margin-top: -80px;
 }
 .about-section .about-left h1 {
   font-size: 56px;
@@ -2995,7 +2995,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   letter-spacing: normal;
   color: #3C5E39;
   padding-left: 75px;
-  margin-top: -50px;
+  margin-top: -80px;
 
   /* ⬇️ Tambahan biar teks bisa melebar */
   max-width: 100%;
@@ -4180,7 +4180,7 @@ body {
 
 .section-divider {
   width: 80%;
-  margin: -40px auto 20px auto;
+ transform: translateY(-40px);
   border-bottom: 1px dashed #c0c0c0;
 }
 
@@ -4193,7 +4193,7 @@ body {
 .section-divider9 {
   position: relative;
   left: 50%;
-  transform: translateX(-700px); /* mirip efek margin-left: -700px */
+  transform: translateX(-700px) translateY(20px) ; /* mirip efek margin-left: -700px */
   width: 1000%;
   border-bottom: 1px dashed #c0c0c0;
   z-index: 0;
@@ -4214,7 +4214,7 @@ body {
 
 .section-divider6 {
   width: 1000%;
- transform: translateY(55px);
+ transform: translateY(60px);
   border-bottom: 1px dashed #c0c0c0;
 }
 
