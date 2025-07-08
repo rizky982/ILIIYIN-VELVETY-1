@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 40px;
-  margin-top: 110px; /* ⬅️ Tambahkan ini */
+  margin-top: 90px; /* ⬅️ Tambahkan ini */
 }
 
 .cta-bar .cta-text {
@@ -251,7 +251,7 @@ font-family: 'Aileron', sans-serif;
 @media (min-width: 1440px) and (max-width: 1480px) {
   .hero {
     width: 100vw;
-    height: 720px; /* atau kamu bisa pakai clamp(600px, 70vh, 800px) */
+    height: 700px; /* atau kamu bisa pakai clamp(600px, 70vh, 800px) */
     display: flex;
     justify-content: center;
     background-color: #899F87;
@@ -2143,7 +2143,7 @@ opacity: 1;
   display: flex;
   width: 100vw;
   overflow: hidden;
-  height: 580px;
+  height: 560px;
 }
 }
 
@@ -2411,7 +2411,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   margin-left: auto;
   margin-right: auto;
   white-space: nowrap;       /* satu baris saja */
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 
@@ -2446,7 +2446,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 @media (min-width: 1440px) and (max-width: 1480px) {
   .product-card {
     width: 500px;
-    height: 670px;
+    height: 695px;
     padding: 32px;
     background-color: #f5f7ef;
     display: flex;
@@ -3355,7 +3355,7 @@ body {
   background-color: #f6faf4;
   display: flex;
   flex-direction: column;
-   min-height: 700px;
+   min-height: 600px;
 }
 
 .shift-right {
@@ -4180,7 +4180,7 @@ body {
 
 .section-divider {
   width: 80%;
-  margin: -10px auto 20px auto;
+  margin: -40px auto 20px auto;
   border-bottom: 1px dashed #c0c0c0;
 }
 
@@ -4222,7 +4222,7 @@ body {
   width: 150%;
   position: relative;
   left: -25%;
-  top: 0px; /* untuk menggeser ke atas */
+  top: -20px; /* untuk menggeser ke atas */
   border-top: 1px dashed #c0c0c0;
 }
 
@@ -5020,7 +5020,7 @@ height: 38px;
 
 .border-right {
   border-right: 1px solid #ccc; /* ubah warna jika perlu */
-  min-height: 250px;
+  min-height: 400px;
 }
 
 
