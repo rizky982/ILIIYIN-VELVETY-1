@@ -3938,10 +3938,11 @@ body {
   padding: 20px;
 }
 
-.image {
-  width: 100%;
-  max-width: 450px;
-  height: auto;
+image {
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    transform: translateY(43px);
 }
 
 .text-section {
@@ -3951,23 +3952,25 @@ body {
 
 .subtitle {
   font-family: 'Aileron', sans-serif;
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 1.1;
-  letter-spacing: normal;
-  color: #6b7280;
-  margin-bottom: 0.5rem;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: normal;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+    transform: translateY(43px);
 }
 
 
 .headline {
-  font-family: 'Ivy Mode', serif;
-  font-weight: 300;
+  font-family: 'Ivy Mode',sans-serif;
   font-size: 56px;
   line-height: 1.2;
   letter-spacing: 0.56px;
   color: #1e2d1f;
   margin-bottom: 1rem;
+    font-weight: normal;
+    transform: translateY(43px);
 }
 
 .description {
@@ -3979,6 +3982,7 @@ body {
   letter-spacing: normal;
   color: #3C5E39;
   margin-bottom: 1.5rem;
+    transform: translateY(43px);
 }
 
 /* Sembunyikan di HP */
@@ -4017,6 +4021,7 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
   font-family: 'Aileron, sans serif';
+     transform: translateY(43px);
 }
 .custom-button:hover {
   background-color: black;
