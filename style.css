@@ -253,7 +253,7 @@ font-family: 'Aileron', sans-serif;
   .hero {
    
         width: 100vw;
-        height: 680px;
+        height: 705px;
         display: flex;
         justify-content: center;
         background-color: #899F87;
@@ -4240,7 +4240,7 @@ image {
     border-bottom: 1px dashed #c0c0c0;
     transform: translateY(43px);
     margin-left: -990px;
-    margin-top: 110px;
+    margin-top: 150px;
 }
 .section-divider3 {
     width: 150%;
