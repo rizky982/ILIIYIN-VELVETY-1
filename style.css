@@ -1,13 +1,14 @@
 @charset "UTF-8";
 .cta-bar {
-  background-color: #8b9c87;
-  color: #f2f5e9;
-  padding: 40px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 40px;
-  margin-top: 65px; /* ⬅️ Tambahkan ini */
+    background-color: #8b9c87;
+    color: #f2f5e9;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 35px;
+    transform: translateY(15px);
 }
 
 .cta-bar .cta-text {
@@ -2399,19 +2400,19 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   box-sizing: border-box;
 }
 .section-subtitle {
-  text-align: center;
-  font-family: 'Aileron', sans-serif;
-  font-weight: 300;
-  font-size: 28px;
-  line-height: 110%;         /* atau 1.1 */
-  color: #899F87;
-  margin-bottom: 10px;
-  max-width: 266px;          /* sesuai layout */
-  height: 31px;              /* sesuai layout */
-  margin-left: auto;
-  margin-right: auto;
-  white-space: nowrap;       /* satu baris saja */
-  margin-top: 45px;
+    text-align: center;
+    font-family: 'Aileron', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 110%;
+    color: #899F87;
+    margin-bottom: 10px;
+    max-width: 266px;
+    height: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    margin-top: 45px;
 }
 
 
@@ -2445,15 +2446,15 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 
 @media (min-width: 1440px) and (max-width: 1480px) {
   .product-card {
-    width: 500px;
-    height: 695px;
-    padding: 32px;
-    background-color: #f5f7ef;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    border-left: 1px dashed #c2c0c0;
-  }
+          width: 500px;
+        height: 700px;
+        padding: 32px;
+        background-color: #f5f7ef;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        border-left: 1px dashed #c2c0c0;
+    }
 }
 
 .product-card:first-child {
@@ -2971,13 +2972,13 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   flex: 1 1 40%;
 }
 .about-section .about-left h3 {
-  font-size: 28px;
-  color: #899F87;
-  margin-bottom: 10px;
-  letter-spacing: 0.8px;
-   font-family: 'Aileron', sans-serif;
-   margin-left: -100px;
-   margin-top: -80px;
+    font-size: 28px;
+    color: #899F87;
+    margin-bottom: 10px;
+    letter-spacing: 0.8px;
+    font-family: 'Aileron', sans-serif;
+    margin-left: -100px;
+    margin-top: -40px;
 }
 .about-section .about-left h1 {
   font-size: 56px;
@@ -2987,19 +2988,17 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
    margin-left: -100px;
 }
 .about-section .about-right {
-  flex: 1 1 55%;
-  font-family: 'Aileron', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.4;
-  letter-spacing: normal;
-  color: #3C5E39;
-  padding-left: 75px;
-  margin-top: -80px;
-
-  /* ⬇️ Tambahan biar teks bisa melebar */
-  max-width: 100%;
-  width: 100%;
+     flex: 1 1 55%;
+    font-family: 'Aileron', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #3C5E39;
+    padding-left: 75px;
+    margin-top: -40px;
+    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -3195,20 +3194,22 @@ body {
 
 
 .ts-title {
-  font-size: 28px;
-  color: #899F87;
-  font-family: 'Aileron, sans serif';
+    font-size: 28px;
+    color: #899F87;
+    font-family: 'Aileron', sans serif;
+    transform: translateY(50px);
 }
 
 .ts-filters h1 {
-  font-size: 53px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-top: 0.5rem;
-  margin-bottom: 1.5rem;
-  color: #213721;
-  font-family: 'Ivy Mode', sans-serif;
-  max-width: 100%;
+    font-size: 53px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #213721;
+    font-family: 'Ivy Mode', sans-serif;
+    max-width: 100%;
+    transform: translateY(50px);
 }
 
 
@@ -3298,9 +3299,10 @@ body {
 
 
 .ts-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;            
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transform: translateY(50px);
 }
 
 .ts-tag {
@@ -3339,10 +3341,10 @@ body {
 }
 
 .ts-products {
-  display: grid;
- grid-template-columns: repeat(2, minmax(300px, 1fr));
-  gap: 20px; /* Hapus gap agar garis bisa tersambung */
-  
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 20px;
+    transform: translateY(50px);
 }
 .ts-card.hidden {
   visibility: hidden;
@@ -4179,9 +4181,10 @@ body {
 }
 
 .section-divider {
-  width: 80%;
- transform: translateY(-40px);
-  border-bottom: 1px dashed #c0c0c0;
+    width: 80%;
+    transform: translateY(-40px);
+    border-bottom: 1px dashed #c0c0c0;
+    margin-left: 110px;
 }
 
 .section-divider1 {
@@ -4191,13 +4194,25 @@ body {
 }
 
 .section-divider9 {
-  position: relative;
-  left: 50%;
-  transform: translateX(-700px) translateY(20px) ; /* mirip efek margin-left: -700px */
-  width: 1000%;
-  border-bottom: 1px dashed #c0c0c0;
-  z-index: 0;
-  margin-top: 50px;
+ position: relative;
+    left: 50%;
+    width: 1000%;
+    border-bottom: 1px dashed #c0c0c0;
+    z-index: 0;
+    margin-top: 50px;
+    transform: translateY(20px);
+    margin-left: -990px;
+}
+
+.section-dividerA {
+ position: relative;
+    left: 50%;
+    width: 1000%;
+    border-bottom: 1px dashed #c0c0c0;
+    z-index: 0;
+    margin-top: 50px;
+    transform: translateY(-60px);
+    margin-left: -790px;
 }
 
 .section-divider2 {
@@ -4213,19 +4228,18 @@ body {
 }
 
 .section-divider6 {
-  width: 1000%;
- transform: translateY(60px);
-  border-bottom: 1px dashed #c0c0c0;
+     width: 1000%;
+    border-bottom: 1px dashed #c0c0c0;
+    transform: translateY(43px);
+    margin-left: -990px;
 }
-
 .section-divider3 {
-  width: 150%;
-  position: relative;
-  left: -25%;
-  top: -20px; /* untuk menggeser ke atas */
-  border-top: 1px dashed #c0c0c0;
+    width: 150%;
+    position: relative;
+    left: -25%;
+    top: -15px;
+    border-top: 1px dashed #c0c0c0;
 }
-
 .section-divider4 {
   width: 150%;
   position: relative;
