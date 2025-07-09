@@ -8,7 +8,7 @@
     align-items: center;
     font-size: 40px;
     margin-top: 10px;
-    transform: translateY(5px);
+    transform: translateY(30px);
 }
 
 .cta-bar .cta-text {
@@ -253,7 +253,7 @@ font-family: 'Aileron', sans-serif;
   .hero {
    
         width: 100vw;
-        height: 700px;
+        height: 680px;
         display: flex;
         justify-content: center;
         background-color: #899F87;
@@ -2413,7 +2413,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
     margin-left: auto;
     margin-right: auto;
     white-space: nowrap;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 
@@ -2485,20 +2485,20 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 /* Geser gambar ke-1 (CHICORI) ke kiri */
 /* Gambar ke-1 (CHICORI): geser ke kiri & perbesar */
 .product-card:nth-child(1) .image-box img {
-  transform: translate(calc(-50% - 30px), -50%) scale(1.07);
-  top: 265px;
+  transform: translate(calc(-50% - 30px), -50%) scale(1.03);
+  top: 260px;
 }
 
 /* Gambar ke-2 (NOTORIOUS): tetap tengah & ukuran default */
 .product-card:nth-child(2) .image-box img {
   transform: translate(-50%, -50%) scale(1.02);
-  top: 265px;
+  top: 260px;
 }
 
 /* Gambar ke-3 (HOLOCENA): geser ke kanan & perbesar */
 .product-card:nth-child(3) .image-box img {
-  transform: translate(calc(-50% + 30px), -50%) scale(1.07);
-  top: 265px;
+  transform: translate(calc(-50% + 30px), -50%) scale(1.03);
+  top: 260px;
 }
 
 
@@ -3024,7 +3024,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   letter-spacing: 0.8px;
   text-align: left;
   font-family: 'Aileron, sans serif';
-  transform: translateY(-40px);
+  transform: translateY(-20px);
 }
 
 .seen-logo-list {
@@ -3033,7 +3033,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  transform: translateY(-20px);
+  transform: translateY(0px);
 }
 
 .seen-logo {
@@ -3347,7 +3347,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 20px;
-    transform: translateY(20px);
+    transform: translateY(70px);
 }
 .ts-card.hidden {
   visibility: hidden;
@@ -4246,7 +4246,7 @@ image {
     width: 150%;
     position: relative;
     left: -25%;
-    top: -15px;
+    top: 0px;
     border-top: 1px dashed #c0c0c0;
 }
 .section-divider4 {
