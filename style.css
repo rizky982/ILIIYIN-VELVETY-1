@@ -8,7 +8,7 @@
     align-items: center;
     font-size: 40px;
     margin-top: 10px;
-    transform: translateY(-15px);
+    transform: translateY(5px);
 }
 
 .cta-bar .cta-text {
@@ -253,7 +253,7 @@ font-family: 'Aileron', sans-serif;
   .hero {
    
         width: 100vw;
-        height: 705px;
+        height: 700px;
         display: flex;
         justify-content: center;
         background-color: #899F87;
@@ -2413,7 +2413,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
     margin-left: auto;
     margin-right: auto;
     white-space: nowrap;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 
@@ -2448,7 +2448,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
 @media (min-width: 1440px) and (max-width: 1480px) {
   .product-card {
           width: 500px;
-        height: 680px;
+        height: 700px;
         padding: 32px;
         background-color: #f5f7ef;
         display: flex;
@@ -2979,7 +2979,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
     letter-spacing: 0.8px;
     font-family: 'Aileron', sans-serif;
     margin-left: -100px;
-    margin-top: -40px;
+    margin-top: -30px;
 }
 .about-section .about-left h1 {
   font-size: 56px;
@@ -2997,7 +2997,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
     letter-spacing: normal;
     color: #3C5E39;
     padding-left: 75px;
-    margin-top: -40px;
+    margin-top: -30px;
     max-width: 100%;
     width: 100%;
 }
