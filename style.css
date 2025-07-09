@@ -8,7 +8,7 @@
     align-items: center;
     font-size: 40px;
     margin-top: 10px;
-    transform: translateY(30px);
+    transform: translateY(40px);
 }
 
 .cta-bar .cta-text {
@@ -253,7 +253,7 @@ font-family: 'Aileron', sans-serif;
   .hero {
    
         width: 100vw;
-        height: 680px;
+        height: 700px;
         display: flex;
         justify-content: center;
         background-color: #899F87;
@@ -2413,7 +2413,7 @@ align-items: flex-start;     /* Biar ikon sejajar atas dg teks */
     margin-left: auto;
     margin-right: auto;
     white-space: nowrap;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
@@ -3200,7 +3200,7 @@ body {
     font-size: 28px;
     color: #899F87;
     font-family: 'Aileron', sans serif;
-    transform: translateY(20px);
+    transform: translateY(70px);
 }
 
 .ts-filters h1 {
@@ -3212,7 +3212,7 @@ body {
     color: #213721;
     font-family: 'Ivy Mode', sans-serif;
     max-width: 100%;
-    transform: translateY(20px);
+    transform: translateY(70px);
 }
 
 
@@ -3305,7 +3305,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    transform: translateY(20px);
+    transform: translateY(70px);
 }
 
 .ts-tag {
@@ -3941,12 +3941,13 @@ body {
   padding: 20px;
 }
 
-image {
+.image-illustration {
     width: 100%;
     max-width: 470px;
     height: auto;
     transform: translateY(43px);
 }
+
 
 .text-section {
   flex: 1;
@@ -4240,13 +4241,12 @@ image {
     border-bottom: 1px dashed #c0c0c0;
     transform: translateY(43px);
     margin-left: -990px;
-    margin-top: 150px;
 }
 .section-divider3 {
     width: 150%;
     position: relative;
     left: -25%;
-    top: 0px;
+    top: 10px;
     border-top: 1px dashed #c0c0c0;
 }
 .section-divider4 {
